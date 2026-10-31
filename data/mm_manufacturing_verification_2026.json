@@ -1,0 +1,295 @@
+{
+  "version": "1.7.0",
+  "country": "MM",
+  "countryName": "Myanmar",
+  "nativeCountryName": "မြန်မာ",
+  "cycle": 2026,
+  "checkedAt": "2026-10-06",
+  "status": "pending_manufacturing_verification",
+  "routeId": null,
+  "officialSendingAgency": {
+    "name": "Public Overseas Employment Agency (POEA)",
+    "sourceUrl": "https://epstopik.hrdkorea.or.kr/epstopik/recp/guide/onlineRecptionDesc.do?lang=ko"
+  },
+  "officialReception": {
+    "address": "No.(8/1), Nagayone pagoda street, No.(5) Ward, Mayangone Township, Yangon, Myanmar",
+    "phone": "+951-65-1989",
+    "sourceUrl": "https://epstopik.hrdkorea.or.kr/epstopik/recp/guide/selectReceptionGuideList.do?lang=ko"
+  },
+  "current2026Evidence": {
+    "hrdScheduleIndex": {
+      "sourceUrl": "https://epstopik.hrdkorea.or.kr/epstopik/abot/exam/selectSechduleDescList.do?lang=en",
+      "observedSectorRows": [
+        {
+          "sector": "Agriculture·Livestock",
+          "title": "The 8th recruitment of the point system in Myanmar(Agriculture·Livestock)",
+          "registrationPeriod": "2026-08-06 through 2026-08-10",
+          "observedTestStart": "2026-09-09",
+          "observedResultDate": "2026-10-16",
+          "verificationNote": "Current public schedule evidence is sector-specific and is not Manufacturing."
+        },
+        {
+          "sector": "Construction",
+          "title": "The 8th recruitment of the point system in Myanmar(Construction)",
+          "registrationPeriod": "2026-08-06 through 2026-08-10",
+          "observedTestStart": "2026-09-18",
+          "observedResultDate": "2026-10-16",
+          "verificationNote": "Current public schedule evidence is sector-specific and is not Manufacturing."
+        },
+        {
+          "sector": "Forestry",
+          "title": "The 8th recruitment of the point system in Myanmar(Forestry)",
+          "registrationPeriod": "2026-08-06 through 2026-08-10",
+          "observedTestStart": "2026-09-17",
+          "observedResultDate": "2026-10-16",
+          "verificationNote": "Current public schedule evidence is sector-specific and is not Manufacturing."
+        }
+      ],
+      "manufacturingRowCaptured": false
+    },
+    "myanmarLabourMinistry": {
+      "epsOpportunityUrl": "https://www.mol.gov.mm/mol-department-of-labour/eps-opportunity/",
+      "observation": "The Ministry EPS opportunity page contains Manufacturing-related historical EPS materials alongside other sectors, but KEP has not captured a current 2026 Manufacturing-labelled recruitment notice from this page.",
+      "departmentIndexUrl": "https://www.mol.gov.mm/mol-department-of-labour/"
+    }
+  },
+  "historicalManufacturingEvidence": {
+    "status": "historical_only_not_2026_recruitment",
+    "sourceUrl": "https://www.mol.gov.mm/%E1%80%A1%E1%80%9C%E1%80%AF%E1%80%95%E1%80%BA%E1%80%9E%E1%80%99%E1%80%AC%E1%80%B8%E1%80%9D%E1%80%94%E1%80%BA%E1%80%80%E1%80%BC%E1%80%AE%E1%80%B8%E1%80%8C%E1%80%AC%E1%80%94-%E1%80%92%E1%80%AF-32/",
+    "publicationDate": "2025-07-25",
+    "facts": {
+      "examCycle": "16th EPS-TOPIK Manufacturing second batch",
+      "successfulCandidates": 4249,
+      "jobApplicationPeriod": "2025-07-21 through 2025-08-01",
+      "employerSelectionPrinciple": "Applicants receive a job call only if selected by an employer."
+    },
+    "warning": "This proves a Myanmar Manufacturing EPS workflow existed, but it is a 2025 post-selection artifact and cannot create a 2026 Manufacturing Country Pack."
+  },
+  "promotionRule": {
+    "requiredEvidence": [
+      "A direct official 2026 Myanmar notice or HRD Korea schedule/result artifact explicitly labelled Manufacturing.",
+      "The artifact must identify the current cycle/sector rather than reuse Agriculture/Livestock, Construction or Forestry.",
+      "Cycle-specific dates, fee and registration documents must remain unset until supported by the Manufacturing artifact."
+    ],
+    "prohibitedInference": [
+      "Do not infer Manufacturing from the existence of historical Manufacturing rounds.",
+      "Do not infer Manufacturing from a country-level Point System or from other-sector 2026 schedules.",
+      "Do not reuse Agriculture/Livestock, Construction or Forestry dates, quotas, documents or fees."
+    ]
+  },
+  "nextReviewSources": [
+    "https://www.mol.gov.mm/mol-department-of-labour/",
+    "https://www.mol.gov.mm/mol-department-of-labour/eps-opportunity/",
+    "https://epstopik.hrdkorea.or.kr/epstopik/abot/exam/selectSechduleDescList.do?lang=en",
+    "https://epstopik.hrdkorea.or.kr/epstopik/pass/candidate/functionalLevelCandidateList.do?lang=en",
+    "https://epstopik.hrdkorea.or.kr/epstopik/pass/candidate/sucessCandidateList.do?lang=en"
+  ],
+  "promotionGate": {
+    "status": "blocked",
+    "promotionAllowed": false,
+    "currentManufacturingArtifactPresent": false,
+    "requiredAll": [
+      {
+        "id": "official_source",
+        "rule": "Evidence must come directly from HRD Korea EPS-TOPIK or Myanmar Ministry of Labour / official POEA channel.",
+        "allowedHosts": [
+          "epstopik.hrdkorea.or.kr",
+          "mol.gov.mm"
+        ]
+      },
+      {
+        "id": "current_cycle",
+        "rule": "The artifact must identify the current 2026 cycle rather than a historical cohort.",
+        "requiredCycle": 2026
+      },
+      {
+        "id": "explicit_sector",
+        "rule": "The artifact must explicitly identify Manufacturing; country-level Point System evidence is insufficient.",
+        "requiredSector": "Manufacturing"
+      },
+      {
+        "id": "actionable_artifact",
+        "rule": "At least one direct recruitment, registration, schedule, skills/result or final-result artifact must be captured for the current Manufacturing cycle.",
+        "acceptedArtifactTypes": [
+          "recruitment",
+          "registration",
+          "schedule",
+          "skills_candidate",
+          "result",
+          "final_result"
+        ]
+      }
+    ],
+    "forbiddenAsPromotionProof": [
+      "Agriculture/Livestock, Construction or Forestry dates, fees, quotas or documents.",
+      "Historical 2025 Manufacturing job-application evidence.",
+      "Validity-extension, roster-extension or re-registration evidence for an older Manufacturing cohort.",
+      "Third-party summaries, mirrors, social reposts or search snippets without a directly reviewed official artifact.",
+      "A country-level Point System artifact whose public text does not explicitly identify Manufacturing."
+    ],
+    "currentReview": {
+      "reviewedAt": "2026-10-06",
+      "reviewedSourceIds": [
+        "mm_mol_eps_opportunity",
+        "mm_hrdk_schedule_index",
+        "mm_hrdk_skills_candidates",
+        "mm_hrdk_final_results"
+      ],
+      "sourceFindings": [
+        {
+          "sourceId": "mm_mol_eps_opportunity",
+          "sourceUrl": "https://www.mol.gov.mm/mol-department-of-labour/eps-opportunity/",
+          "finding": "The current official EPS opportunity page contains historical Manufacturing materials and other EPS materials, but no direct current 2026 Manufacturing-labelled recruitment, registration, schedule, skills/result or final-result artifact was captured in this review.",
+          "qualifiesForPromotion": false,
+          "reviewedFingerprintSha256": "8f5063b942e0e86b1181b17285dbd4eb69856ec0f17fd886b0beafcd2b3b405b",
+          "previousReviewedFingerprintSha256": "83874eaa597f0817f187416f375431eb664b042eae92137215fd31bb2d661743",
+          "reviewNote": "The changed current page was re-reviewed on 2026-10-06; historical Manufacturing materials remain present, but no direct 2026 Manufacturing-labelled qualifying artifact was found."
+        },
+        {
+          "sourceId": "mm_hrdk_schedule_index",
+          "sourceUrl": "https://epstopik.hrdkorea.or.kr/epstopik/abot/exam/selectSechduleDescList.do?lang=en",
+          "finding": "Current reviewed HRD Korea schedule evidence did not provide a direct Myanmar 2026 Manufacturing-labelled schedule artifact. The captured 2026 Myanmar rows remain Agriculture/Livestock, Construction and Forestry.",
+          "qualifiesForPromotion": false
+        },
+        {
+          "sourceId": "mm_hrdk_skills_candidates",
+          "sourceUrl": "https://epstopik.hrdkorea.or.kr/epstopik/pass/candidate/functionalLevelCandidateList.do?lang=en",
+          "finding": "No directly reviewed current Myanmar 2026 Manufacturing-labelled skills-candidate artifact was captured.",
+          "qualifiesForPromotion": false
+        },
+        {
+          "sourceId": "mm_hrdk_final_results",
+          "sourceUrl": "https://epstopik.hrdkorea.or.kr/epstopik/pass/candidate/sucessCandidateList.do?lang=en",
+          "finding": "No directly reviewed current Myanmar 2026 Manufacturing-labelled final-result artifact was captured.",
+          "qualifiesForPromotion": false
+        }
+      ],
+      "qualifyingArtifacts": [],
+      "observedCurrentOfficialSectors": [
+        "Agriculture·Livestock",
+        "Construction",
+        "Forestry"
+      ],
+      "historicalManufacturingArtifacts": [
+        {
+          "year": 2025,
+          "artifactType": "job_application",
+          "sourceUrl": "https://www.mol.gov.mm/%E1%80%A1%E1%80%9C%E1%80%AF%E1%80%95%E1%80%BA%E1%80%9E%E1%80%99%E1%80%AC%E1%80%B8%E1%80%9D%E1%80%94%E1%80%BA%E1%80%80%E1%80%BC%E1%80%AE%E1%80%B8%E1%80%8C%E1%80%AC%E1%80%94-%E1%80%92%E1%80%AF-32/",
+          "promotable": false
+        },
+        {
+          "year": 2026,
+          "artifactType": "job_application_extension",
+          "cohort": "16th EPS-TOPIK Manufacturing first batch",
+          "sourceUrl": "https://www.moi.gov.mm/nlm/file-download/download/public/4962",
+          "cohortContinuityOnly": true,
+          "promotable": false
+        },
+        {
+          "year": 2026,
+          "artifactType": "job_application_extension",
+          "cohort": "prior EPS-TOPIK Manufacturing second batch",
+          "sourceUrl": "https://www.gnlm.com.mm/poea-to-accept-eps-topik-job-application-extensions/",
+          "cohortContinuityOnly": true,
+          "promotable": false
+        }
+      ],
+      "baselineReviewDecision": {
+        "currentSourceVersionsReviewed": true,
+        "baselineAcceptanceAllowed": true,
+        "routePromotionAllowed": false,
+        "rule": "Accepting source fingerprints means only that these current official page versions were reviewed. It does not verify a 2026 Myanmar Manufacturing route and must not alter route status."
+      },
+      "conclusion": "All four configured Myanmar official watch targets were fetched and reviewed on 2026-10-06. No direct official 2026 Manufacturing-labelled qualifying artifact was captured. The source versions may be accepted as the monitored baseline, while Manufacturing route promotion remains blocked.",
+      "supplementalDiscoveryReview": {
+        "reviewedAt": "2026-10-06",
+        "sourceId": "mm_mol_dol_index",
+        "sourceUrl": "https://www.mol.gov.mm/mol-department-of-labour/",
+        "finding": "The current Department of Labour index exposes the EPS opportunity section and recent Department of Labour posts, but no direct current 2026 Manufacturing-labelled EPS recruitment, registration, schedule, skills/result or final-result artifact was identified in this review.",
+        "qualifiesForPromotion": false,
+        "baselineState": "reviewed_safe_to_accept",
+        "reviewedFingerprintSha256": "8470a173dc97d1112055833aec857a73ea59471ee3921c69c82ecbffb6504ea4"
+      }
+    }
+  },
+  "monitoring": {
+    "requiredSourceIds": [
+      "mm_mol_eps_opportunity",
+      "mm_hrdk_schedule_index",
+      "mm_hrdk_skills_candidates",
+      "mm_hrdk_final_results"
+    ],
+    "rule": "Any monitored source change requires review. A changed page never auto-promotes the route; promotion requires promotionGate.requiredAll to be satisfied and reviewed.",
+    "lastReviewedAt": "2026-10-06",
+    "baselineAcceptanceState": "reviewed_sources_pending_one_time_acceptance_without_route_promotion",
+    "supplementalDiscoverySourceIds": [
+      "mm_mol_dol_index"
+    ],
+    "supplementalDiscoveryRule": "The Department of Labour index is monitored to catch new EPS notices that may appear outside the dedicated EPS opportunity page. A change is a discovery trigger only and never satisfies the Manufacturing promotion gate by itself."
+  },
+  "latestPublicSurfaceRecheck": {
+    "reviewedAt": "2026-10-06T12:07:00+09:00",
+    "scope": "Direct public-page recheck; not a substitute for the monitored full-source review.",
+    "observations": [
+      {
+        "source": "https://www.mol.gov.mm/mol-department-of-labour/eps-opportunity/",
+        "finding": "The official Myanmar Ministry of Labour EPS page visibly contains a Manufacturing pass-list link, but that visible entry does not itself identify a 2026 cycle/date. The currently visible 11th EPS-TOPIK notice is explicitly Agriculture/Construction, so the Manufacturing link cannot satisfy the current-cycle promotion gate.",
+        "promotionEffect": "none"
+      },
+      {
+        "source": "https://epstopik.hrdkorea.or.kr/epstopik/abot/exam/selectSechduleDescList.do?lang=en",
+        "finding": "The current public schedule surface reviewed on 2026-10-06 did not expose a Myanmar 2026 Manufacturing-labelled row on the visible current page. Existing dossier evidence continues to identify current Myanmar Agriculture/Livestock, Construction and Forestry rows.",
+        "promotionEffect": "none"
+      },
+      {
+        "source": "https://epstopik.hrdkorea.or.kr/epstopik/pass/candidate/functionalLevelCandidateList.do?lang=en",
+        "finding": "The visible current first page of the skills-candidate list did not expose a Myanmar Manufacturing-labelled entry. This surface check is not treated as an exhaustive historical pagination search.",
+        "promotionEffect": "none"
+      },
+      {
+        "source": "https://epstopik.hrdkorea.or.kr/epstopik/pass/candidate/sucessCandidateList.do?lang=en",
+        "finding": "The visible current first page of the final pass list did not expose a Myanmar Manufacturing-labelled entry. This surface check is not treated as an exhaustive historical pagination search.",
+        "promotionEffect": "none"
+      },
+      {
+        "source": "https://www.gnlm.com.mm/poea-to-accept-eps-topik-job-application-extensions/",
+        "finding": "A 2026-09-23 state-newspaper report cites POEA accepting 2026-09-24 through 2026-09-30 job-application extensions for prior Manufacturing second-batch passers without job offers. This is continuation evidence for an older cohort, not a new 2026 Manufacturing recruitment cycle.",
+        "promotionEffect": "none"
+      }
+    ],
+    "conclusion": "No new direct official 2026 Manufacturing-labelled actionable artifact was captured. Keep routeId null and promotion blocked.",
+    "promotionAllowed": false
+  },
+  "priorCohortContinuationEvidence": {
+    "status": "2026_calendar_year_historical_cohort_only",
+    "sourceClass": "myanmar_ministry_of_information_government_newspaper",
+    "sourceUrl": "https://www.moi.gov.mm/nlm/file-download/download/public/4962",
+    "publicationDate": "2026-03-16",
+    "artifactType": "job_application_extension",
+    "cohort": "16th EPS-TOPIK Manufacturing first batch",
+    "facts": {
+      "authorityNamed": "Public Overseas Employment Agency (POEA-EPS)",
+      "extensionPeriod": "2026-03-18 through 2026-03-25",
+      "purpose": "Extend job applications for prior-cohort passers who had not received a job offer."
+    },
+    "promotable": false,
+    "warning": "This is a 2026-dated continuation action for an older 16th Manufacturing cohort. It is not a current 2026 Manufacturing recruitment, registration, schedule, skills/result or final-result artifact and cannot satisfy the Manufacturing promotion gate."
+  },
+  "priorCohortContinuationEvidenceSecondBatch": {
+    "status": "2026_calendar_year_historical_cohort_only",
+    "sourceClass": "myanmar_state_newspaper_reporting_poea_notice",
+    "sourceUrl": "https://www.gnlm.com.mm/poea-to-accept-eps-topik-job-application-extensions/",
+    "publicationDate": "2026-09-23",
+    "artifactType": "job_application_extension",
+    "cohort": "prior EPS-TOPIK Manufacturing second batch",
+    "facts": {
+      "authorityNamed": "Public Overseas Employment Agency (POEA)",
+      "extensionPeriod": "2026-09-24 through 2026-09-30",
+      "serviceHours": "09:00 through 16:00",
+      "location": "POEA office, Dagon Myothit (North) Township, Yangon",
+      "purpose": "Extend job applications for prior Manufacturing second-batch passers who had not received a job offer."
+    },
+    "promotable": false,
+    "warning": "This is a 2026-dated continuation action for an older Manufacturing second-batch cohort. It is not a current 2026 Manufacturing recruitment, registration, schedule, skills/result or final-result artifact and cannot satisfy the Manufacturing promotion gate."
+  }
+}

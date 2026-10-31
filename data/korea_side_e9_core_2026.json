@@ -1,0 +1,125 @@
+{
+  "version": "1.2.0",
+  "checkedAt": "2026-10-06",
+  "scope": "Shared Korea-side E-9 process facts that apply after employer selection. Country-specific sending-agency forms, fees, medical providers, embassy checklists, and individual schedules remain route-specific.",
+  "officialSources": {
+    "workerEntry": "https://eps.hrdkorea.or.kr/e9/user/employment/employment.do?method=immigrationLabor",
+    "workerEmploymentProcess": "https://eps.hrdkorea.or.kr/e9/user/employment/employment.do?method=employProcessLabor",
+    "employerEmploymentProcess": "https://eps.hrdkorea.or.kr/e9/user/employment/employment.do?method=employProcessCompany",
+    "epsGovernmentPortal": "https://www.eps.go.kr/eo/EmployJobProc.eo?tabGb=06",
+    "wagePayment": "https://law.go.kr/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1034323105",
+    "workerCounseling": "https://eps.hrdkorea.or.kr/e9/user/intro/intro.do?method=workerCounseling",
+    "rightsProtection": "https://eps.hrdkorea.or.kr/h2/empProcess/protecOfRights.do",
+    "workplaceChangeLaw": "https://www.law.go.kr/LSW/lsSc.do?nwYn=1&p1=&query=%EC%99%B8%EA%B5%AD%EC%9D%B8%EA%B7%BC%EB%A1%9C%EC%9E%90%EC%9D%98+%EA%B3%A0%EC%9A%A9+%EB%93%B1%EC%97%90+%EA%B4%80%ED%95%9C+%EB%B2%95%EB%A5%A0&section=&subMenu=1&tabMenuId=tab18&tabNo="
+  },
+  "safety": {
+    "noCountrySpecificVisaFeeInference": true,
+    "noCountrySpecificEmbassyChecklistInference": true,
+    "noIndividualDepartureDateInference": true,
+    "noEmployerSelectionGuarantee": true,
+    "noVisaGuarantee": true,
+    "noDepartureGuarantee": true,
+    "localSendingAgencyNoticeOverridesLocalOperationalDetail": true,
+    "noIndividualPayrollAmountInference": true,
+    "noCaseSpecificWorkplaceChangeApprovalInference": true,
+    "noLegalOutcomeGuarantee": true
+  },
+  "stages": [
+    {
+      "id": "employer_selection",
+      "status": "shared_korea_official",
+      "authority": "Korean employment center / employer / EPS",
+      "fact": "After the Korean government verifies employer eligibility, employers select from officially referred foreign job seekers. Selection is not guaranteed by test passage or any private intermediary.",
+      "sourceUrl": "https://eps.hrdkorea.or.kr/e9/user/employment/employment.do?method=employProcessCompany"
+    },
+    {
+      "id": "slc",
+      "status": "shared_korea_official",
+      "authority": "Employer / HRD Korea / sending agency",
+      "fact": "When an employment permit is issued, a standard labor contract is prepared and sent through HRD Korea to the sending country. The worker reviews the contract through the sending agency and confirms whether to accept it.",
+      "sourceUrl": "https://eps.hrdkorea.or.kr/e9/user/employment/employment.do?method=employProcessCompany",
+      "boundary": "Exact signing appointment, local forms, translations, and country-side handling remain sending-country specific."
+    },
+    {
+      "id": "predeparture_training",
+      "status": "shared_korea_official_local_delivery_varies",
+      "authority": "Sending agency / local pre-departure training institution",
+      "fact": "A worker whose labor contract has been concluded completes pre-departure education in the sending country before entry to Korea.",
+      "sourceUrl": "https://eps.hrdkorea.or.kr/e9/user/employment/employment.do?method=immigrationLabor",
+      "boundary": "Training duration, location, curriculum details, fees, and required documents may vary by sending country and current cohort."
+    },
+    {
+      "id": "visa_docs",
+      "status": "shared_korea_official_local_checklist_pending",
+      "authority": "Employer or agency / Korea Immigration / Korean mission / sending agency",
+      "fact": "After the labor contract is concluded, the employer or authorized agency obtains a Confirmation of Visa Issuance. HRD Korea sends the confirmation into the sending-country process, and the sending agency applies for the worker's E-9 visa through the Korean mission after required pre-departure steps.",
+      "sourceUrl": "https://eps.hrdkorea.or.kr/e9/user/employment/employment.do?method=employProcessCompany",
+      "workerSourceUrl": "https://eps.hrdkorea.or.kr/e9/user/employment/employment.do?method=immigrationLabor",
+      "boundary": "Embassy document checklist, local submission method, visa/admin fee, account balance, and appointment requirements must come from the current country/cohort notice."
+    },
+    {
+      "id": "departure",
+      "status": "shared_korea_official_individual_assignment_required",
+      "authority": "Sending agency / HRD Korea",
+      "fact": "HRD Korea establishes an entry plan for visa-issued workers. The sending agency prepares workers under that plan and confirms entry availability at least 7 days before the planned entry date. Only final confirmed workers enter on the designated date.",
+      "sourceUrl": "https://eps.hrdkorea.or.kr/e9/user/employment/employment.do?method=immigrationLabor",
+      "boundary": "Never infer an individual's flight or entry date from a group report or another cohort."
+    },
+    {
+      "id": "korea_entry_training",
+      "status": "shared_korea_official",
+      "authority": "HRD Korea / employment education institution",
+      "fact": "After arrival at Incheon Airport, E-9 workers are transferred to an employment education institution and receive 16 hours of employment education. A health examination is conducted again; workers who fail the health examination may be returned to the sending country.",
+      "sourceUrl": "https://eps.hrdkorea.or.kr/e9/user/employment/employment.do?method=immigrationLabor"
+    },
+    {
+      "id": "employer_handover",
+      "status": "shared_korea_official",
+      "authority": "Employment education institution / employer",
+      "fact": "After completing employment education and the required post-arrival health process, the worker is handed over to the employer and placed at the contracted workplace.",
+      "sourceUrl": "https://eps.hrdkorea.or.kr/e9/user/employment/employment.do?method=immigrationLabor"
+    },
+    {
+      "id": "residence_registration",
+      "status": "shared_korea_official",
+      "authority": "Korea Immigration Service / local immigration office",
+      "fact": "A foreign national who will stay in Korea for more than 90 days must complete foreigner registration with the immigration office having jurisdiction over the place of stay within 90 days of entry.",
+      "sourceUrl": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=272921",
+      "boundary": "Exact reservation method, local office, required documents, fees, and card issuance logistics must be checked against current Korea Immigration guidance for the worker's actual place of stay."
+    },
+    {
+      "id": "eps_insurance_check",
+      "status": "shared_korea_official",
+      "authority": "HRD Korea EPS / employer / foreign worker",
+      "fact": "EPS has four statutory insurance products: Departure Guarantee Insurance and Guarantee Insurance are employer-side obligations; Return Cost Insurance and Casualty Insurance are worker-side obligations. For a newly entering E-9 worker, the employment contract takes effect on the entry date. The official EPS guidance sets 15-day enrollment windows for Departure Guarantee, Guarantee and Casualty insurance and a 3-month window for Return Cost Insurance.",
+      "sourceUrl": "https://eps.hrdkorea.or.kr/e9/user/intro/intro.do?method=epsInsurances",
+      "boundary": "Premium amount, guarantee-insurance applicability, national pension/health/employment/industrial-accident insurance treatment, and claim procedures depend on the current official rule and individual/workplace conditions."
+    },
+    {
+      "id": "first_payroll_check",
+      "status": "shared_korea_official",
+      "authority": "Employer / Ministry of Employment and Labor",
+      "fact": "Under Article 43 of the Korean Labor Standards Act, wages must in principle be paid directly to the worker in full, and wages must be paid at least once per month on a fixed date. KEP can use the first payday as a checkpoint against the written labor contract and actual work record, but it must not infer the lawful net amount or deductions without the worker's payroll and contract context.",
+      "sourceUrl": "https://law.go.kr/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1034323105",
+      "boundary": "Do not promise a specific take-home amount, lawful deduction result, overtime amount, tax result or payday beyond what the current contract/payroll record and applicable law establish."
+    },
+    {
+      "id": "labor_support_ready",
+      "status": "shared_korea_official",
+      "authority": "HRD Korea Foreign Workforce Counseling Center / competent Korea authorities",
+      "fact": "HRD Korea operates the Foreign Workforce Counseling Center at 1577-0071 from 09:00 to 18:00. The service supports EPS and labor-relation counseling, insurance questions, grievance support and interpretation, including Indonesian-language service. Other competent channels include employment centers for EPS workplace matters, Immigration Contact Center 1345 and Korea Legal Aid 132.",
+      "sourceUrl": "https://eps.hrdkorea.or.kr/e9/user/intro/intro.do?method=workerCounseling",
+      "secondarySourceUrl": "https://eps.hrdkorea.or.kr/h2/empProcess/protecOfRights.do",
+      "boundary": "KEP should route the worker to the competent authority for the actual dispute or status issue. It must not present general guidance as a legal ruling or guaranteed remedy."
+    },
+    {
+      "id": "employment_maintenance",
+      "status": "shared_korea_official",
+      "authority": "Employment Center / Ministry of Employment and Labor / Korea Immigration as applicable",
+      "fact": "An E-9 worker does not have an unrestricted right to move workplaces at will. Under Article 25 of the Act on the Employment of Foreign Workers, a workplace-change application is available when statutory grounds apply, including employer termination or refusal to renew and worker-not-at-fault circumstances such as closure, employment-permit restrictions, noncompliant housing, labor-condition violations or unfair treatment. Employment Centers handle workplace-change and job-referral administration under EPS.",
+      "sourceUrl": "https://www.law.go.kr/LSW/lsSc.do?nwYn=1&p1=&query=%EC%99%B8%EA%B5%AD%EC%9D%B8%EA%B7%BC%EB%A1%9C%EC%9E%90%EC%9D%98+%EA%B3%A0%EC%9A%A9+%EB%93%B1%EC%97%90+%EA%B4%80%ED%95%9C+%EB%B2%95%EB%A5%A0&section=&subMenu=1&tabMenuId=tab18&tabNo=",
+      "secondarySourceUrl": "https://eps.hrdkorea.or.kr/h2/empProcess/protecOfRights.do",
+      "boundary": "Do not tell a worker to quit, leave a workplace, or assume a change will be approved. Case-specific eligibility, deadlines, immigration consequences and evidence requirements must be confirmed with the competent Employment Center/authority."
+    }
+  ]
+}

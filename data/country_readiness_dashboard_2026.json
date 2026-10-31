@@ -1,0 +1,507 @@
+{
+  "version": "1.9.1",
+  "cycle": 2026,
+  "checkedAt": "2026-10-06",
+  "scope": "KEP Manufacturing Country Pack readiness and next official review trigger",
+  "policy": [
+    "No route is beta-ready solely because EPS-TOPIK or a Point System round exists.",
+    "Exact promotion requires current route/cycle/sector official evidence.",
+    "Dated triggers are review dates, not automatic promotion dates.",
+    "Source-triggered rows remain HOLD until a qualifying official artifact is reviewed.",
+    "Pending Manufacturing countries have no promoted routeId."
+  ],
+  "summary": {
+    "sendingCountries": 18,
+    "registeredCountryPacks": 16,
+    "betaHold": 1,
+    "researchHold": 15,
+    "pendingManufacturingVerification": 1,
+    "datedReviewTriggers": 3,
+    "betaReady": 0,
+    "futureDesignatedNo2026Route": 1
+  },
+  "rows": [
+    {
+      "country": "ID",
+      "countryName": "Indonesia",
+      "routeId": "id-e9-manufacturing-2026",
+      "packState": "beta_hold",
+      "betaState": "pending_manual_approval",
+      "nextReview": {
+        "type": "official_notice_and_manual_gate",
+        "subject": "Actual beta release-day source recheck + same-HEAD automated gates + manual OPEN decision",
+        "officialSources": [
+          "https://kp2mi.go.id/gtog-korea/info"
+        ]
+      },
+      "blockers": [
+        "same-HEAD static-check, ui-smoke, Pages, and beta-launch-gate must all succeed",
+        "repeat the Manufacturing official-source re-check on the actual beta release day",
+        "record an explicit manual beta OPEN decision"
+      ],
+      "releaseGates": [
+        "same-HEAD static-check, ui-smoke, Pages, and beta-launch-gate must all succeed",
+        "repeat the Manufacturing official-source re-check on the actual beta release day",
+        "record an explicit manual beta OPEN decision"
+      ],
+      "validationGaps": [
+        "Manufacturing-specific detailed online job-application document list is still not found as of 2026-10-06",
+        "job_docs remains the only answered_hold exact job-application blocker",
+        "job_scan, job_name, job_edit and job_submit now have conservative official safety baselines",
+        "identity safety guidance preserves registered identity exactly, copies document numbers from the corresponding official document, and routes ambiguous address/document-source fields to official help instead of guessing; it does not claim a Manufacturing 2026 field-by-field map",
+        "the one exact safe HOLD blocks final Broker Replacement Rate 100% PASS, but does not by itself block beta activation while the app refuses to guess"
+      ]
+    },
+    {
+      "country": "NP",
+      "countryName": "Nepal",
+      "routeId": "np-e9-manufacturing-2026",
+      "packState": "research_hold",
+      "betaState": "blocked",
+      "nextReview": {
+        "type": "official_notice",
+        "subject": "Current 2026 first-phase/current-cohort EPS-TOPIK, skills or downstream notice",
+        "officialSources": [
+          "https://epsnepal.gov.np/notices"
+        ]
+      },
+      "blockers": [
+        "current-cohort EPS-TOPIK schedule/result not yet promoted",
+        "current-cohort Skill & Competency notice not yet verified",
+        "current-cohort medical/job-application and downstream exact rules unresolved"
+      ]
+    },
+    {
+      "country": "VN",
+      "countryName": "Vietnam",
+      "routeId": "vn-e9-manufacturing-2026",
+      "packState": "research_hold",
+      "betaState": "blocked",
+      "nextReview": {
+        "type": "dated_official_review",
+        "date": "2026-10-12",
+        "subject": "Final HRD-confirmed 2026 Manufacturing Round 2 schedule",
+        "officialSources": [
+          "https://colab.moha.gov.vn/tin-tucs/357/Chuong-trinh-EPS.aspx"
+        ]
+      },
+      "blockers": [
+        "final official 2026 Manufacturing Round 2 schedule/result not yet verified",
+        "current Manufacturing medical/candidate-file instructions not fully mapped",
+        "post-SLC visa/training/departure exact rules not fully mapped"
+      ],
+      "verified": {
+        "round2ProjectedWindow": {
+          "status": "review_trigger_only_not_final",
+          "window": "2026-10-12 through 2026-10-16",
+          "recheckedAt": "2026-10-06"
+        }
+      }
+    },
+    {
+      "country": "PH",
+      "countryName": "Philippines",
+      "routeId": "ph-e9-manufacturing-2026",
+      "packState": "research_hold",
+      "betaState": "blocked",
+      "nextReview": {
+        "type": "official_notice",
+        "subject": "11th Regular Manufacturing registration/test schedule or DMW opening",
+        "officialSources": [
+          "https://dmw.gov.ph/",
+          "https://epstopik.hrdkorea.or.kr/epstopik/abot/exam/selectSechduleDescList.do?lang=en"
+        ]
+      },
+      "blockers": [
+        "Regular Manufacturing registration/test schedule not fixed/open",
+        "current Regular skills/final-selection notice not verified",
+        "medical/job-roster and post-SLC exact rules unresolved"
+      ]
+    },
+    {
+      "country": "TH",
+      "countryName": "Thailand",
+      "routeId": "th-e9-manufacturing-2026",
+      "packState": "research_hold",
+      "betaState": "blocked",
+      "nextReview": {
+        "type": "dated_official_review",
+        "date": "2026-10-19",
+        "subject": "DOE Round 18 local skills-list/instructions after HRD Manufacturing candidate linkage",
+        "officialSources": [
+          "https://epstopik.hrdkorea.or.kr/epstopik/abot/exam/selectSechduleDescList.do?lang=en",
+          "https://epstopik.hrdkorea.or.kr/epstopik/pass/candidate/functionalLevelCandidateList.do?lang=en"
+        ]
+      },
+      "blockers": [
+        "DOE 2026-10-19 local skills-list/instructions and final Point System result remain pending",
+        "post-selection medical/job-application exact rules not mapped",
+        "visa/training/departure exact rules not mapped"
+      ],
+      "verified": {
+        "hrdSkillsCandidates": {
+          "status": "official_examnot_sector_site_linked",
+          "publicationDate": "2026-10-06",
+          "BangkokManufacturingExamNot": "57",
+          "UdonThaniManufacturingExamNot": "64",
+          "excludedOtherSectorExamNot": [
+            "56",
+            "58",
+            "63",
+            "65"
+          ]
+        }
+      }
+    },
+    {
+      "country": "BD",
+      "countryName": "Bangladesh",
+      "routeId": "bd-e9-manufacturing-2026",
+      "packState": "research_hold",
+      "betaState": "blocked",
+      "nextReview": {
+        "type": "official_notice",
+        "subject": "Current 2026 Regular Manufacturing EPS notice",
+        "officialSources": [
+          "https://epstopik.hrdkorea.or.kr/epstopik/abot/exam/selectSechduleDescList.do?lang=en",
+          "https://epstopik.hrdkorea.or.kr/epstopik/recp/guide/onlineRecptionDesc.do?lang=ko"
+        ]
+      },
+      "blockers": [
+        "2026 Regular Manufacturing registration/test schedule not verified",
+        "Regular eligibility/fee/documents not cycle-verified",
+        "downstream medical/job-file/visa/training/departure exact rules not mapped"
+      ]
+    },
+    {
+      "country": "LK",
+      "countryName": "Sri Lanka",
+      "routeId": "lk-e9-manufacturing-2026",
+      "packState": "research_hold",
+      "betaState": "blocked",
+      "nextReview": {
+        "type": "dated_official_review",
+        "date": "2026-10-12",
+        "subject": "SLBFE application-completion instructions",
+        "officialSources": [
+          "https://www.slbfe.lk/"
+        ]
+      },
+      "blockers": [
+        "application-completion instructions not yet published/reviewed",
+        "post-selection medical/job-file exact instructions remain notice-specific",
+        "Sri Lanka beta validation not performed"
+      ]
+    },
+    {
+      "country": "LA",
+      "countryName": "Laos",
+      "routeId": "la-e9-manufacturing-2026",
+      "packState": "research_hold",
+      "betaState": "blocked",
+      "nextReview": {
+        "type": "official_notice",
+        "subject": "34th Laos Manufacturing test-date or detailed local notice",
+        "officialSources": [
+          "https://epstopik.hrdkorea.or.kr/epstopik/abot/exam/selectSechduleDescList.do?lang=en"
+        ]
+      },
+      "blockers": [
+        "34th test/result dates remain undecided",
+        "34th fee/quota/document rules not locally verified",
+        "downstream exact rules not mapped"
+      ]
+    },
+    {
+      "country": "UZ",
+      "countryName": "Uzbekistan",
+      "routeId": "uz-e9-manufacturing-2026",
+      "packState": "research_hold",
+      "betaState": "blocked",
+      "nextReview": {
+        "type": "official_notice",
+        "subject": "Uzbekistan 9th Manufacturing fee/document checklist and cycle-specific medical/job-file/visa/departure notices",
+        "officialSources": [
+          "https://migration.uz/",
+          "https://epstopik.hrdkorea.or.kr/epstopik/recp/guide/onlineRecptionDesc.do?lang=ko"
+        ]
+      },
+      "blockers": [
+        "cycle-specific fee/document checklist not reconstructed",
+        "current 9th-cycle medical/job-file/visa/individual departure exact rules not mapped"
+      ],
+      "verified": {
+        "skillsCandidate": {
+          "status": "official_examnot_linked",
+          "examNot": "9",
+          "publicationDate": "2026-05-27"
+        },
+        "finalResult": {
+          "status": "official_examnot_linked",
+          "examNot": "9",
+          "publicationDate": "2026-08-27"
+        },
+        "countryPostSelection": {
+          "status": "verified_2026_country_process_not_9th_specific",
+          "manufacturingContractsReported": 213,
+          "contractPublicationDate": "2026-08-14",
+          "predepartureTrainingProcess": true
+        }
+      }
+    },
+    {
+      "country": "MN",
+      "countryName": "Mongolia",
+      "routeId": "mn-e9-manufacturing-2026",
+      "packState": "research_hold",
+      "betaState": "blocked",
+      "nextReview": {
+        "type": "official_notice",
+        "subject": "11th Manufacturing fee/document checklist and downstream exact rules",
+        "officialSources": [
+          "https://epstopik.hrdkorea.or.kr/epstopik/recp/guide/onlineRecptionDesc.do?lang=ko"
+        ]
+      },
+      "blockers": [
+        "cycle-specific fee/document checklist not reconstructed",
+        "downstream exact rules not mapped"
+      ],
+      "verified": {
+        "skillsCandidate": {
+          "status": "official_examnot_linked",
+          "examNot": "33",
+          "publicationDate": "2026-07-03"
+        },
+        "finalResult": {
+          "status": "official_examnot_linked",
+          "examNot": "33",
+          "publicationDate": "2026-08-28"
+        }
+      }
+    },
+    {
+      "country": "CN",
+      "countryName": "China",
+      "routeId": "cn-e9-manufacturing-2026",
+      "packState": "research_hold",
+      "betaState": "blocked",
+      "nextReview": {
+        "type": "official_notice",
+        "subject": "6th Manufacturing final result, fee/document checklist and downstream notices",
+        "officialSources": [
+          "https://epstopik.hrdkorea.or.kr/epstopik/pass/candidate/sucessCandidateList.do?lang=en",
+          "https://epstopik.hrdkorea.or.kr/epstopik/recp/guide/onlineRecptionDesc.do?lang=ko"
+        ]
+      },
+      "blockers": [
+        "cycle-specific fee/document checklist not reconstructed",
+        "final result and downstream exact rules not mapped"
+      ],
+      "verified": {
+        "skillsCandidate": {
+          "status": "official_examnot_linked",
+          "examNot": "19",
+          "publicationDate": "2026-09-30"
+        }
+      }
+    },
+    {
+      "country": "KH",
+      "countryName": "Cambodia",
+      "routeId": "kh-e9-manufacturing-2026",
+      "packState": "research_hold",
+      "betaState": "blocked",
+      "nextReview": {
+        "type": "official_notice",
+        "subject": "Cambodia 12th Manufacturing fee/document and downstream exact rules",
+        "officialSources": [
+          "https://epstopik.hrdkorea.or.kr/epstopik/recp/guide/onlineRecptionDesc.do?lang=ko"
+        ]
+      },
+      "blockers": [
+        "Manufacturing fee/document/downstream exact rules not mapped"
+      ],
+      "verified": {
+        "manufacturingSchedule": {
+          "status": "direct_official",
+          "registrationPeriod": "2026-05-22 through 2026-05-25",
+          "testAnnouncementDate": "2026-06-12",
+          "testPeriod": "2026-06-22 through 2026-07-15"
+        },
+        "skillsCandidate": {
+          "status": "official_examnot_linked",
+          "examNot": "46",
+          "publicationDate": "2026-08-06"
+        },
+        "finalResult": {
+          "status": "official_examnot_linked",
+          "examNot": "46",
+          "publicationDate": "2026-08-21"
+        }
+      }
+    },
+    {
+      "country": "TL",
+      "countryName": "Timor-Leste",
+      "routeId": "tl-e9-manufacturing-2026",
+      "packState": "research_hold",
+      "betaState": "blocked",
+      "nextReview": {
+        "type": "official_notice",
+        "subject": "Final result or current fee/document/downstream notice",
+        "officialSources": [
+          "https://epstopik.hrdkorea.or.kr/epstopik/pass/candidate/sucessCandidateList.do?lang=en",
+          "https://epstopik.hrdkorea.or.kr/epstopik/recp/guide/onlineRecptionDesc.do?lang=ko"
+        ]
+      },
+      "blockers": [
+        "cycle-specific fee/document/final-result/downstream exact rules not mapped"
+      ],
+      "verified": {
+        "manufacturingSchedules": {
+          "Dili": {
+            "status": "direct_official",
+            "registrationPeriod": "2026-03-09 through 2026-03-18",
+            "testAnnouncementDate": "2026-06-09",
+            "testPeriod": "2026-06-18 through 2026-07-30"
+          },
+          "Baucau": {
+            "status": "direct_official",
+            "registrationPeriod": "2026-03-09 through 2026-03-18",
+            "testAnnouncementDate": null,
+            "testAnnouncementStatus": "undecided",
+            "testPeriod": "2026-08-06 through 2026-08-07"
+          }
+        },
+        "skillsCandidates": {
+          "status": "official_examnot_site_sector_linked",
+          "publicationDate": "2026-09-22",
+          "DiliExamNot": "42",
+          "BaucauExamNot": "43",
+          "excludedFisheryExamNot": [
+            "44",
+            "45"
+          ]
+        }
+      }
+    },
+    {
+      "country": "PK",
+      "countryName": "Pakistan",
+      "routeId": "pk-e9-manufacturing-2026",
+      "packState": "research_hold",
+      "betaState": "blocked",
+      "nextReview": {
+        "type": "official_notice",
+        "subject": "Direct official Pakistan Manufacturing sector linkage and schedule",
+        "officialSources": [
+          "https://epstopik.hrdkorea.or.kr/epstopik/abot/exam/selectSechduleDescList.do?lang=en",
+          "https://epstopik.hrdkorea.or.kr/epstopik/pass/candidate/sucessCandidateList.do?lang=en"
+        ]
+      },
+      "blockers": [
+        "direct official Manufacturing sector linkage not captured",
+        "Manufacturing schedule/test dates unresolved",
+        "Manufacturing fee/document/final-result/downstream exact rules not mapped"
+      ]
+    },
+    {
+      "country": "KG",
+      "countryName": "Kyrgyzstan",
+      "routeId": "kg-e9-manufacturing-2026",
+      "packState": "research_hold",
+      "betaState": "blocked",
+      "nextReview": {
+        "type": "official_notice",
+        "subject": "Current Kyrgyzstan SLC/post-SLC/visa/training/departure notice for the verified Manufacturing route",
+        "officialSources": [
+          "https://migrant.kg/",
+          "https://epstopik.hrdkorea.or.kr/epstopik/recp/guide/onlineRecptionDesc.do?lang=ko"
+        ]
+      },
+      "blockers": [
+        "current SLC/post-SLC visa/training/departure exact rules not mapped",
+        "current employer-selected worker flow not validated end-to-end",
+        "Kyrgyzstan user validation not performed"
+      ]
+    },
+    {
+      "country": "MM",
+      "countryName": "Myanmar",
+      "routeId": null,
+      "packState": "pending_manufacturing_verification",
+      "betaState": "not_applicable",
+      "nextReview": {
+        "type": "official_notice",
+        "subject": "Direct official 2026 Myanmar Manufacturing-labelled recruitment, schedule or result artifact, including new Department of Labour notices",
+        "officialSources": [
+          "https://www.mol.gov.mm/mol-department-of-labour/",
+          "https://www.mol.gov.mm/mol-department-of-labour/eps-opportunity/",
+          "https://epstopik.hrdkorea.or.kr/epstopik/abot/exam/selectSechduleDescList.do?lang=en",
+          "https://epstopik.hrdkorea.or.kr/epstopik/pass/candidate/functionalLevelCandidateList.do?lang=en",
+          "https://epstopik.hrdkorea.or.kr/epstopik/pass/candidate/sucessCandidateList.do?lang=en"
+        ]
+      },
+      "blockers": [
+        "2026 captured HRD schedule evidence is explicitly Agriculture/Livestock, Construction and Forestry rather than Manufacturing",
+        "no direct official 2026 Manufacturing-labelled recruitment/schedule/result artifact captured",
+        "2026-dated Manufacturing first-batch and second-batch job-application extensions belong to prior cohorts and cannot be promoted as a new 2026 route"
+      ],
+      "verificationDossierFile": "data/mm_manufacturing_verification_2026.json",
+      "detailsPage": "mm.html"
+    },
+    {
+      "country": "TJ",
+      "countryName": "Tajikistan",
+      "routeId": "tj-e9-manufacturing-2026",
+      "packState": "research_hold",
+      "betaState": "blocked",
+      "nextReview": {
+        "type": "official_notice",
+        "subject": "Tajikistan 2nd Manufacturing post-selection medical/job-application and visa/training/departure notices",
+        "officialSources": [
+          "https://epstopik.hrdkorea.or.kr/epstopik/recp/guide/onlineRecptionDesc.do?lang=ko"
+        ]
+      },
+      "blockers": [
+        "post-selection medical/job-application exact rules not mapped",
+        "visa/training/departure exact rules not mapped"
+      ],
+      "verified": {
+        "skillsCandidate": {
+          "status": "official_examnot_linked",
+          "examNot": "10",
+          "publicationDate": "2026-04-06"
+        },
+        "finalResult": {
+          "status": "official_examnot_linked",
+          "examNot": "10",
+          "publicationDate": "2026-05-08"
+        }
+      }
+    },
+    {
+      "country": "KZ",
+      "countryName": "Kazakhstan",
+      "routeId": null,
+      "packState": "future_designated",
+      "betaState": "not_applicable",
+      "designationDate": "2026-08-14",
+      "designatedOrder": 18,
+      "plannedIntroductionYear": 2028,
+      "nextReview": {
+        "type": "future_operational_setup",
+        "subject": "Korea-Kazakhstan EPS MOU, local EPS center setup and operational recruitment details before planned 2028 introduction",
+        "officialSources": [
+          "https://www.moel.go.kr/news/enews/report/enewsView.do?news_seq=19786",
+          "https://www.opm.go.kr/opm/news/press-release.do?article.offset=20&articleLimit=10&articleNo=163081&mode=view"
+        ]
+      },
+      "blockers": [
+        "Kazakhstan was designated as the 18th EPS sending country on 2026-08-14, but substantial worker introduction is planned from 2028 rather than 2026",
+        "intergovernmental EPS MOU and local EPS center setup are follow-up work before operational recruitment",
+        "no 2026 Kazakhstan Manufacturing Country Pack may be created from designation status alone"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,369 @@
+{
+  "country": "ID",
+  "visa": "E-9",
+  "sector": "manufacturing",
+  "cycle": 2026,
+  "goal": "zero-private-broker",
+  "packVersion": "0.3.6",
+  "lastVerified": "2026-10-06",
+  "stages": [
+    {
+      "id": "eligibility",
+      "title": "Eligibility check",
+      "authority": "HRD Korea / KP2MI",
+      "kind": "rules",
+      "action": "Check age, education, stay/deportation history, color-vision and current notice requirements.",
+      "brokerReplacement": "complete",
+      "sourceUrl": "https://kp2mi.go.id/gtog-detail/korea/pengumuman-pendaftaran-ubt-umum-sektor-perikanan-dan-sektor-manufaktur-progam-g-to-g-ke-korea-selatan-dengan-sistem-poin-tahun-2026"
+    },
+    {
+      "id": "registration",
+      "title": "Sisko P2MI online registration",
+      "authority": "KP2MI",
+      "kind": "official_action",
+      "action": "Prepare and submit the official registration using the current KP2MI guide.",
+      "brokerReplacement": "guided_official",
+      "sourceUrl": "https://kp2mi.go.id/gtog-detail/korea/pengumuman-pendaftaran-ubt-umum-sektor-perikanan-dan-sektor-manufaktur-progam-g-to-g-ke-korea-selatan-dengan-sistem-poin-tahun-2026",
+      "officialActionUrl": "https://siskop2mi.bp2mi.go.id/",
+      "officialActionLabel": "Buka Sisko P2MI"
+    },
+    {
+      "id": "exam_fee",
+      "title": "EPS-TOPIK fee payment",
+      "authority": "KP2MI / designated bank",
+      "kind": "official_payment",
+      "action": "Verify exact amount, payee and payment code against the current notice before paying.",
+      "brokerReplacement": "complete",
+      "warning": "Never pay an unofficial 'job guarantee' fee.",
+      "sourceUrl": "https://kp2mi.go.id/gtog-detail/korea/pengumuman-pendaftaran-ubt-umum-sektor-perikanan-dan-sektor-manufaktur-progam-g-to-g-ke-korea-selatan-dengan-sistem-poin-tahun-2026",
+      "officialActionUrl": "https://siskop2mi.bp2mi.go.id/",
+      "officialActionLabel": "Buka Sisko P2MI / kode bayar"
+    },
+    {
+      "id": "biometric",
+      "title": "Fingerprint and photo capture",
+      "authority": "KP2MI / BP3MI / P4MI",
+      "kind": "official_action",
+      "action": "Attend the assigned biometric appointment with the required originals.",
+      "brokerReplacement": "guided_official",
+      "sourceUrl": "https://kp2mi.go.id/gtog-detail/korea/pengumuman-pendaftaran-ubt-umum-sektor-perikanan-dan-sektor-manufaktur-progam-g-to-g-ke-korea-selatan-dengan-sistem-poin-tahun-2026"
+    },
+    {
+      "id": "document_verify",
+      "title": "Registration document verification",
+      "authority": "KP2MI / HRD Korea",
+      "kind": "official_action",
+      "action": "Pre-check scans and data before official verification.",
+      "brokerReplacement": "complete",
+      "sourceUrl": "https://kp2mi.go.id/gtog-detail/korea/pengumuman-pendaftaran-ubt-umum-sektor-perikanan-dan-sektor-manufaktur-progam-g-to-g-ke-korea-selatan-dengan-sistem-poin-tahun-2026",
+      "officialActionUrl": "https://siskop2mi.bp2mi.go.id/",
+      "officialActionLabel": "Buka Sisko P2MI"
+    },
+    {
+      "id": "exam_card",
+      "title": "Print exam card",
+      "authority": "Sisko P2MI",
+      "kind": "self_service",
+      "action": "Print the card after verification and check identity data.",
+      "brokerReplacement": "complete",
+      "sourceUrl": "https://kp2mi.go.id/gtog-detail/korea/pengumuman-pendaftaran-ubt-umum-sektor-perikanan-dan-sektor-manufaktur-progam-g-to-g-ke-korea-selatan-dengan-sistem-poin-tahun-2026",
+      "officialActionUrl": "https://siskop2mi.bp2mi.go.id/",
+      "officialActionLabel": "Buka Sisko P2MI"
+    },
+    {
+      "id": "eps_topik",
+      "title": "EPS-TOPIK",
+      "authority": "HRD Korea",
+      "kind": "official_exam",
+      "action": "Take the official Korean language test.",
+      "brokerReplacement": "prep_complete",
+      "warning": "Passing stage 1 is not final selection.",
+      "sourceUrl": "https://epstopik.hrdkorea.or.kr/epstopik/abot/exam/selectTopikDesc.do?lang=ko",
+      "officialActionUrl": "https://epstopik.hrdkorea.or.kr/epstopik/abot/exam/selectTopikDesc.do?lang=ko",
+      "officialActionLabel": "Buka EPS-TOPIK resmi"
+    },
+    {
+      "id": "skill_competency",
+      "title": "Mandatory Skill Test + optional Job Capacity Assessment",
+      "authority": "HRD Korea",
+      "kind": "official_exam",
+      "action": "After a verified 2026 Manufacturing EPS-TOPIK first-stage pass, attend the mandatory Skill Test (physical strength, interview, basic skills). Job Capacity Assessment competency evidence is optional: the official 17 September 2026 notice allowed upload through SiskoP2MI only during 21 September 09:00–23 September 13:00 WIB, now CLOSED. Qualifying evidence includes ≥1 year Manufacturing experience, Manufacturing Diploma I+, Manufacturing vocational training ≥120 hours, or valid national Manufacturing competence certification. If a participant chose optional evidence during that closed window, the official annex also required a completed Formulir Uji Kompetensi with any of the four evidence types; when an employer could not issue experience proof, the alternative factual confirmation required two non-relative sureties, identity copies and supporting contract/visa/immigration records. These are conditional documents, NOT requirements for every Skill Test candidate or the later job application. Follow a new official notice for any later schedule; do not reuse this closed window.",
+      "brokerReplacement": "prep_complete",
+      "sourceUrl": "https://kp2mi.go.id/gtog-detail/korea/pengumuman-hasil-ujian-kemampuan-bahasa-korea-eps-topik-ubt-umum-sektor-manufaktur-tahun-2026",
+      "officialActionUrl": "https://epstopik.hrdkorea.or.kr/epstopik/skill/SkillTest.do?lang=ko",
+      "officialActionLabel": "Buka Skill Test resmi",
+      "warning": "The optional 21–23 September 2026 Manufacturing competency upload is closed, not required for every candidate and not the Manufacturing online job-application document checklist. EPS-TOPIK stage-one pass is not final selection; the Skill Test remains mandatory. The optional upload form and employer-evidence fallback are only conditionally mandatory within that already closed procedure.",
+      "competencyUploadNotice": {
+        "url": "https://kp2mi.go.id/gtog-detail/korea/pengumuman-persyaratan-unggah-dokumen-kompetensi-peserta-skill-test-ubt-umum-sektor-manufaktur-eps-topik-tahun-2026",
+        "issuedAt": "2026-09-17",
+        "noticeNumber": "PENG.2522/04.04/PP.02.04/IX/2026",
+        "optional": true,
+        "uploadVia": "SiskoP2MI official applicant account only",
+        "periodStart": "2026-09-21T09:00:00",
+        "periodEnd": "2026-09-23T13:00:00",
+        "timeZone": "Asia/Jakarta",
+        "status": "closed",
+        "notJobApplicationDocuments": true,
+        "conditionalSubmission": {
+          "appliesOnlyIfApplicantChoosesOptionalCompetencyEvidence": true,
+          "competencyFormRequiredWithAnyUploadedEvidence": true,
+          "requiredCompetencyFormUrl": "https://kp2mi.go.id/uploads/gtgkorea/images/data_17-09-2026_FORMULIR_UJI_KOMPETENSI.pdf",
+          "officialUploadInstructionsUrl": "https://kp2mi.go.id/uploads/gtgkorea/images/data_17-09-2026_JUKNIS_PEMENUHAN_DOKUMEN_UJI_KOMPETENSI_UBT_UMUM_MANUFAKTUR_2026.pdf",
+          "uploadOnlyInPublishedPeriod": true,
+          "closedPeriodMustNotBeReopenedByApp": true,
+          "workExperienceFallbackOnlyIfEmployerCannotIssueCertificate": true,
+          "workExperienceFallbackFormUrl": "https://kp2mi.go.id/uploads/gtgkorea/images/data_17-09-2026_FORMULIR_SURAT_KONFIRMASI_DASAR_FAKTUAL_PENGALAMAN_KERJA.pdf",
+          "workExperienceFallbackRequiresTwoNonRelativeSureties": true,
+          "workExperienceFallbackRequiresEachSuretyIdCopyAndContact": true,
+          "workExperienceFallbackRequiresWorkContractOrVisaImmigrationEvidence": true,
+          "applicantSectorMustMatchEPSExamCard": true,
+          "notGeneralSkillTestRequirement": true,
+          "notFinalManufacturingJobApplicationChecklist": true
+        }
+      }
+    },
+    {
+      "id": "final_selection",
+      "title": "Final point-system selection",
+      "authority": "HRD Korea / KP2MI",
+      "kind": "official_result",
+      "action": "Check the official final result. Selection is ranking-based.",
+      "brokerReplacement": "complete",
+      "sourceUrl": "https://kp2mi.go.id/gtog-detail/korea/pengumuman-pendaftaran-ubt-umum-sektor-perikanan-dan-sektor-manufaktur-progam-g-to-g-ke-korea-selatan-dengan-sistem-poin-tahun-2026"
+    },
+    {
+      "id": "psychology_pre_job",
+      "title": "Psychology examination before job application",
+      "authority": "HIMPSI / KP2MI",
+      "kind": "official_requirement",
+      "action": "For 2026 graduates, complete the required psychology examination before MCU I and job application.",
+      "brokerReplacement": "guided_official",
+      "sourceUrl": "https://kp2mi.go.id/gtog-detail/korea/pengumuman-ketentuan-pelaksanaan-pemeriksaan-psikologi-bagi-calon-pekerja-migran-indonesia-program-g-to-g-ke-korea-selatan-kelulusan-sebelum-tahun-2026-dan-kelulusan-tahun-2026",
+      "officialActionUrl": "https://himpsi.or.id/cpmi/daily-cpmi-korea-2026",
+      "officialActionLabel": "Buka daftar psikolog HIMPSI"
+    },
+    {
+      "id": "mcu1",
+      "title": "Medical Check Up I",
+      "authority": "KP2MI-approved health provider",
+      "kind": "official_requirement",
+      "action": "Continue to MCU I only under the current official psychology/medical rule and approved-provider list.",
+      "brokerReplacement": "guided_official",
+      "sourceUrl": "https://www.kp2mi.go.id/gtog-detail/korea/pengumuman-ketentuan-pelaksanaan-pemeriksaan-psikologi-bagi-calon-pekerja-migran-indonesia-program-g-to-g-ke-korea-selatan-kelulusan-sebelum-tahun-2026-dan-kelulusan-tahun-2026"
+    },
+    {
+      "id": "job_application",
+      "title": "Online job application",
+      "authority": "Sisko P2MI",
+      "kind": "official_action",
+      "action": "Current-cycle pre-job baseline is verified. Cross-notice/current-cycle safety baselines now cover scan-vs-photo, identity consistency and non-guessing for ambiguous identity fields, non-editability after final send, and safe confirmation of sent/progress state through Sisko plus the official support channel. Only the exact Manufacturing 2026 online job-application document list remains HOLD.",
+      "brokerReplacement": "held_official_notice",
+      "warning": "The four safety baselines do not replace the missing detailed Manufacturing 2026 document checklist. Do not submit until the exact Manufacturing 2026 document list is verified.",
+      "sourceUrl": "https://kp2mi.go.id/gtog-korea/pengumuman",
+      "officialActionUrl": "https://kp2mi.go.id/gtog-korea/pengumuman",
+      "officialActionLabel": "Cek Pengumuman G-to-G Korea terbaru (Manufaktur 2026)"
+    },
+    {
+      "id": "roster",
+      "title": "Job-seeker roster",
+      "authority": "KP2MI / HRD Korea",
+      "kind": "official_wait",
+      "action": "Track roster status and keep phone/email active.",
+      "brokerReplacement": "complete",
+      "warning": "Roster inclusion does not guarantee employment.",
+      "sourceUrl": "https://eps.hrdkorea.or.kr/e9/user/employment/employment.do?method=employProcessLabor",
+      "officialActionUrl": "https://siskop2mi.bp2mi.go.id/",
+      "officialActionLabel": "Cek status di Sisko P2MI"
+    },
+    {
+      "id": "employer_selection",
+      "title": "Korean employer selection",
+      "authority": "Korean employer / government employment system",
+      "kind": "official_wait",
+      "action": "Wait for employer selection through the official EPS process.",
+      "brokerReplacement": "complete",
+      "warning": "A private intermediary cannot officially guarantee or sell employer selection.",
+      "sourceUrl": "https://eps.hrdkorea.or.kr/e9/user/employment/employment.do?method=employProcessLabor"
+    },
+    {
+      "id": "slc",
+      "title": "Standard Labour Contract (SLC)",
+      "authority": "HRD Korea / KP2MI",
+      "kind": "official_contract",
+      "action": "Read and compare employer, pay, hours, accommodation and deductions before accepting.",
+      "brokerReplacement": "complete",
+      "sourceUrl": "https://kp2mi.go.id/gtog-detail/korea/pengumuman-penerbitan-standard-labour-contract-slc-tanggal-28-agustus-02-september-2026-oleh-hrd-korea-dan-persiapan-pemeriksaan-psikologi-serta-medical-check-up-ii"
+    },
+    {
+      "id": "post_slc_requirements",
+      "title": "Post-SLC psychology / MCU II as required",
+      "authority": "KP2MI / HIMPSI / approved provider",
+      "kind": "conditional_official",
+      "action": "Follow the current cohort-specific SLC notice; complete required psychology and MCU II without delay.",
+      "brokerReplacement": "guided_official",
+      "sourceUrl": "https://kp2mi.go.id/gtog-detail/korea/pengumuman-penerbitan-standard-labour-contract-slc-tanggal-28-agustus-02-september-2026-oleh-hrd-korea-dan-persiapan-pemeriksaan-psikologi-serta-medical-check-up-ii"
+    },
+    {
+      "id": "visa_docs",
+      "title": "Visa document package",
+      "authority": "KP2MI / KVAC / Korean mission",
+      "kind": "official_requirement",
+      "action": "Use the current checklist; verify every identity field matches before visa processing.",
+      "brokerReplacement": "complete",
+      "sourceUrl": "https://kp2mi.go.id/gtog-detail/korea/pengumuman-panggilan-pemeriksaan-medical-check-up-mcu-ii-tanggal-08-september-2026-dan-persiapan-pemberkasan-dokumen-visa-bagi-calon-pekerja-migran-indonesia-reguler-program-g-to-g-ke-korea-selatan"
+    },
+    {
+      "id": "predeparture_training",
+      "title": "Pre-employment / OPP preparation",
+      "authority": "KP2MI / sending institution",
+      "kind": "official_training",
+      "action": "Complete all mandatory pre-departure and pre-employment training/checklists.",
+      "brokerReplacement": "guided_official",
+      "sourceUrl": "https://gyeonggin.hrdkorea.or.kr/1/3/3/1/1"
+    },
+    {
+      "id": "mcu3_departure",
+      "title": "Final health check before departure",
+      "authority": "KP2MI-approved provider / KP2MI",
+      "kind": "official_requirement",
+      "action": "Follow the current departure-call notice for any required MCU-III or renewed full medical check before the flight.",
+      "brokerReplacement": "guided_official",
+      "sourceUrl": "https://kp2mi.go.id/gtog-detail/korea/pengumuman-pemberangkatan-pekerja-migran-indonesia-program-g-to-g-korea-selatan-tanggal-10-agustus-2026",
+      "warning": "The required final medical check depends on the validity of prior MCU results and the current departure notice."
+    },
+    {
+      "id": "departure",
+      "title": "Departure to Korea",
+      "authority": "KP2MI / HRD Korea",
+      "kind": "official_action",
+      "action": "Complete official departure checklist and travel on the assigned entry plan.",
+      "brokerReplacement": "complete",
+      "sourceUrl": "https://eps.hrdkorea.or.kr/e9/user/employment/employment.do?method=immigrationLabor"
+    },
+    {
+      "id": "korea_entry_training",
+      "title": "Korea entry + 16-hour employment education",
+      "authority": "HRD Korea / employment training institution",
+      "kind": "official_training",
+      "action": "After Incheon arrival, complete employment education and health re-check, then transfer to employer.",
+      "brokerReplacement": "guided_official",
+      "sourceUrl": "https://eps.hrdkorea.or.kr/e9/user/employment/employment.do?method=immigrationLabor"
+    },
+    {
+      "id": "employer_handover",
+      "title": "Employer handover",
+      "authority": "Employment training institution / employer",
+      "kind": "official_completion",
+      "action": "Confirm workplace, accommodation and emergency contacts before handover.",
+      "brokerReplacement": "complete",
+      "sourceUrl": "https://eps.hrdkorea.or.kr/e9/user/employment/employment.do?method=immigrationLabor"
+    },
+    {
+      "id": "residence_registration",
+      "title": "Foreigner registration / Residence Card",
+      "authority": "Korea Immigration Service",
+      "kind": "official_requirement",
+      "action": "If staying in Korea for more than 90 days, complete foreigner registration with the immigration office having jurisdiction over your residence within 90 days of entry.",
+      "brokerReplacement": "guided_official",
+      "warning": "Do not wait until the deadline; workplace or residence details may be needed.",
+      "sourceUrl": "https://law.go.kr/LSW/lsLawLinkInfo.do?chrClsCd=010202&lsJoLnkSeq=1015626265",
+      "officialActionUrl": "https://www.hikorea.go.kr/",
+      "officialActionLabel": "Buka HiKorea"
+    },
+    {
+      "id": "eps_insurance_check",
+      "title": "EPS insurance check",
+      "authority": "HRD Korea EPS / employer / worker",
+      "kind": "official_requirement",
+      "action": "Confirm the required EPS insurances are enrolled by the responsible party within the applicable deadline.",
+      "brokerReplacement": "complete",
+      "warning": "Employer-side and worker-side insurance obligations are different; verify each policy instead of paying an intermediary.",
+      "sourceUrl": "https://eps.hrdkorea.or.kr/e9/user/intro/intro.do?method=epsInsurances",
+      "officialActionUrl": "https://eps.hrdkorea.or.kr/e9/user/intro/intro.do?method=epsInsurances",
+      "officialActionLabel": "Buka informasi asuransi EPS"
+    },
+    {
+      "id": "first_payroll_check",
+      "title": "First payroll check",
+      "authority": "Employer / Ministry of Employment and Labor",
+      "kind": "self_service",
+      "action": "Compare the first payslip and actual bank deposit with the SLC, working hours, deductions and the applicable minimum wage.",
+      "brokerReplacement": "complete",
+      "warning": "For 2026 the statutory minimum wage is KRW 10,320 per hour; actual entitlement depends on hours and applicable wage rules.",
+      "sourceUrl": "https://www.minimumwage.go.kr/index.jsp"
+    },
+    {
+      "id": "labor_support_ready",
+      "title": "Labor problem reporting ready",
+      "authority": "Ministry of Employment and Labor",
+      "kind": "self_service",
+      "action": "Save the official 1350 and Labor Portal routes and keep payslips, bank deposits, attendance records and contract evidence in case a wage or labor issue occurs.",
+      "brokerReplacement": "complete",
+      "sourceUrl": "https://labor.moel.go.kr/",
+      "officialActionUrl": "https://labor.moel.go.kr/",
+      "officialActionLabel": "Buka Labor Portal"
+    },
+    {
+      "id": "employment_maintenance",
+      "title": "Employment and workplace-change readiness",
+      "authority": "MOEL employment center / EPS",
+      "kind": "conditional_official",
+      "action": "If a legally recognized reason for workplace change occurs, use the official EPS or employment-center process and observe the applicable deadlines.",
+      "brokerReplacement": "guided_official",
+      "warning": "Workplace change is conditional and deadline-sensitive; do not rely on an informal broker to create or guarantee a transfer.",
+      "sourceUrl": "https://1350.moel.go.kr/rtmview.do?id=1000302820&page=2&type=ALL",
+      "officialActionUrl": "https://1350.moel.go.kr/",
+      "officialActionLabel": "Buka layanan 1350"
+    }
+  ],
+  "jobApplicationBaselineEvidence": {
+    "status": "verified_current_cycle_plus_four_safe_platform_baselines_one_exact_detail_held",
+    "verifiedAt": "2026-10-06",
+    "sourceUrl": "https://kp2mi.go.id/gtog-detail/korea/pengumuman-pendaftaran-ubt-umum-sektor-perikanan-dan-sektor-manufaktur-progam-g-to-g-ke-korea-selatan-dengan-sistem-poin-tahun-2026",
+    "facts": [
+      "For 2026 graduates, the official 2026 Manufacturing/Fisheries recruitment notice says MCU I must be completed at a KP2MI-listed health facility at the online job-application stage.",
+      "The same notice says the psychology examination is completed through a HIMPSI psychologist under the official route.",
+      "Medical and psychology results are entered directly into Sisko P2MI by the health facility and HIMPSI.",
+      "Two official Sisko P2MI job-application notices (Fisheries 2026 and Manufacturing 2025) independently state that supporting documents are scanned rather than photographed.",
+      "Current 2026 official recruitment rules require name, date of birth and gender to match the identity card/registration data; current 2026 skills guidance also requires passport identity to match the EPS application.",
+      "The resulting safe identity baseline preserves registered identity exactly, copies document numbers from the matching official document, and routes ambiguous address/document-source fields to official help instead of guessing.",
+      "Official Sisko notices independently state that application documents already sent cannot be corrected.",
+      "Official Sisko notices independently state that supporting documents are uploaded through Menu Pemenuhan Dokumen, sent applications cannot be corrected, and applicants must monitor progress in Sisko.",
+      "Those notices provide sendingkorea@gmail.com as the official support channel for online-application sending issues.",
+      "The remaining exact Manufacturing 2026 gap is the sector-specific online job-application document list."
+    ],
+    "heldExactQuestions": [
+      "job_docs"
+    ],
+    "safePlatformBaselines": [
+      {
+        "questionId": "job_scan",
+        "rule": "Supporting documents must be scanned, not photographed; keep scans clear and correctly oriented. This does not define the Manufacturing 2026 exact checklist/file specs.",
+        "verificationStatus": "verified_cross_notice_platform_baseline_not_manufacturing_exact",
+        "sourceUrl": "https://kp2mi.go.id/gtog-detail/korea/pengumuman-pembagian-sertifikat-kelulusan-digital-e-sertifikat-ujian-eps-topik-ubt-umum-sektor-perikanan-dan-pengajuan-lamaran-online-calon-pekerja-migran-indonesia-g-to-g-korea-tahun-2026",
+        "secondarySourceUrl": "https://kp2mi.go.id/gtog-detail/korea/pengumuman-pembagian-sertifikat-kelulusan-digital-e-sertifikat-ujian-eps-topik-ubt-umum-sektor-manufaktur-dan-pengajuan-lamaran-online-calon-pekerja-migran-indonesia-program-g-to-g-korea-tahun-2025"
+      },
+      {
+        "questionId": "job_name",
+        "rule": "Preserve registered identity exactly: name/date of birth/gender must match official registration identity, passport identity must remain consistent with the EPS application, and document numbers must be copied from the corresponding official document. If an address/document-source field is ambiguous, do not guess; use the official support channel. This is not a field-by-field Manufacturing 2026 form map.",
+        "verificationStatus": "verified_current_cycle_identity_safety_baseline_not_manufacturing_field_map",
+        "sourceUrl": "https://kp2mi.go.id/gtog-detail/korea/pengumuman-pendaftaran-ubt-umum-sektor-perikanan-dan-sektor-manufaktur-progam-g-to-g-ke-korea-selatan-dengan-sistem-poin-tahun-2026",
+        "secondarySourceUrl": "https://kp2mi.go.id/gtog-detail/korea/pengumuman-jadwal-pelaksanaan-skill-test-ubt-umum-sektor-perikanan-tahun-2026"
+      },
+      {
+        "questionId": "job_edit",
+        "rule": "Treat final send as non-editable: verify all data and attachments before sending. This does not define the Manufacturing 2026 final button/status label.",
+        "verificationStatus": "verified_cross_notice_platform_baseline_not_manufacturing_exact",
+        "sourceUrl": "https://kp2mi.go.id/gtog-detail/korea/pengumuman-pembagian-sertifikat-kelulusan-digital-e-sertifikat-ujian-eps-topik-ubt-umum-sektor-perikanan-dan-pengajuan-lamaran-online-calon-pekerja-migran-indonesia-g-to-g-korea-tahun-2026",
+        "secondarySourceUrl": "https://kp2mi.go.id/gtog-detail/korea/pengumuman-pembagian-sertifikat-kelulusan-digital-e-sertifikat-ujian-eps-topik-ubt-umum-sektor-manufaktur-dan-pengajuan-lamaran-online-calon-pekerja-migran-indonesia-program-g-to-g-korea-tahun-2025"
+      },
+      {
+        "questionId": "job_submit",
+        "rule": "Upload through Menu Pemenuhan Dokumen, perform final send only after review, then confirm Sisko reflects sent/progress state and monitor it. If unclear, use sendingkorea@gmail.com; exact Manufacturing 2026 button label is not asserted.",
+        "verificationStatus": "verified_cross_notice_platform_baseline_not_manufacturing_exact",
+        "sourceUrl": "https://kp2mi.go.id/gtog-detail/korea/pengumuman-pembagian-sertifikat-kelulusan-digital-e-sertifikat-ujian-eps-topik-ubt-umum-sektor-perikanan-dan-pengajuan-lamaran-online-calon-pekerja-migran-indonesia-g-to-g-korea-tahun-2026",
+        "secondarySourceUrl": "https://kp2mi.go.id/gtog-detail/korea/pengumuman-pembagian-sertifikat-kelulusan-digital-e-sertifikat-ujian-eps-topik-ubt-umum-sektor-manufaktur-dan-pengajuan-lamaran-online-calon-pekerja-migran-indonesia-program-g-to-g-korea-tahun-2025"
+      }
+    ]
+  }
+}

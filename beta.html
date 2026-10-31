@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#17695c">
+  <title>Pendaftaran tester — Korea Employment Passport</title>
+  <link rel="icon" type="image/svg+xml" href="icon.svg">
+  <link rel="stylesheet" href="beta.css">
+</head>
+<body>
+  <header class="topbar">
+    <a href="index.html" aria-label="Korea Employment Passport">Korea Employment Passport</a>
+    <span id="betaStatusPill" class="status-pill">MEMERIKSA STATUS…</span>
+  </header>
+
+  <main class="shell">
+    <section class="hero">
+      <span class="eyebrow">INDONESIA → KOREA · E-9</span>
+      <h1>Pendaftaran minat beta sudah dibuka</h1>
+      <p>Kami sedang mengumpulkan calon tester yang menjalani jalur resmi G-to-G Korea / EPS. Target validasi awal kami sekitar 30 peserta, tetapi angka 30 bukan batas otomatis untuk menolak peserta yang memenuhi syarat.</p>
+      <div class="benefit-card">
+        <strong>6 bulan gratis</strong>
+        <span>untuk peserta beta yang diterima, dihitung sejak akun beta diaktifkan.</span>
+      </div>
+    </section>
+
+    <section id="closedPanel" class="card closed-panel">
+      <span class="status-pill hold">AKSES BETA BELUM DIAKTIFKAN</span>
+      <h2>Penggunaan beta belum diaktifkan</h2>
+      <p>Pendaftaran minat tester tetap dibuka, tetapi akses layanan beta masih HOLD. Sebelum akses dapat diaktifkan, KEP harus memverifikasi pengumuman dan lampiran resmi yang menetapkan daftar dokumen lamaran online final <strong>Manufaktur Umum E-9 tahun 2026 setelah Skill Test</strong>, menyelesaikan peninjauan sumber resmi oleh penanggung jawab manusia, lulus pemeriksaan kode dan situs untuk versi rilis yang sama, lalu memperoleh keputusan OPEN manual dari operator. Pengumuman sektor Perikanan, Root Industry, tahun lain, maupun dokumen Skill Test yang bersifat opsional tidak boleh menggantikan persyaratan Manufaktur tersebut. Jangan mengirim dokumen berdasarkan tebakan KEP.</p>
+    </section>
+
+
+
+    <div id="apply" aria-hidden="true"></div>
+    <section id="applicationPanel" class="card" hidden>
+      <span class="status-pill open">PENDAFTARAN MINAT OPEN</span>
+      <h2>Daftar sebagai calon tester</h2>
+      <p>Kirim minat sekarang. Ini belum mengaktifkan akses beta. Tim akan melihat jumlah pendaftar terlebih dahulu lalu melakukan persetujuan. Target awal sekitar 30 tester, bukan hard cap otomatis.</p>
+      <p><strong>Sekitar 30 detik:</strong> pilih tahap, pilih tahun proses, centang 2 konfirmasi, lalu kirim. Tidak perlu nama atau nomor telepon. KEP independen dan tidak menjanjikan kelulusan, pekerjaan, SLC, visa, atau keberangkatan.</p>
+
+      <div id="directIntakeFields" hidden>
+        <label>Email untuk keputusan beta
+          <input id="applicantContactEmail" type="email" maxlength="254" autocomplete="email" inputmode="email" placeholder="nama@example.com">
+        </label>
+        <small>Dipakai hanya untuk review, keputusan beta/KEP ID, dan komunikasi beta yang diperlukan. Jika mode kirim langsung aktif, data aplikasi disimpan privat maksimal 90 hari dan tidak masuk repositori publik.</small>
+        <label class="hp-field" aria-hidden="true">Website
+          <input id="intakeWebsite" type="text" tabindex="-1" autocomplete="off">
+        </label>
+      </div>
+
+      <form id="betaApplicationForm">
+        <label>Tahap tepat Anda sekarang
+          <select id="applicantStage" required>
+            <option value="">Memuat 27 tahap resmi…</option>
+          </select>
+        </label>
+        <small>Pilih tahap resmi yang paling sesuai dengan posisi Anda saat ini. Nilai ini dipakai langsung untuk menyiapkan panduan beta pada tahap yang benar.</small>
+
+        <label>Tahun putaran/proses EPS yang membawa Anda ke tahap ini
+          <select id="applicantCycle" required>
+            <option value="">Memuat tahun proses…</option>
+          </select>
+        </label>
+        <small>Ini bukan tahun lahir. Pilih tahun pendaftaran/putaran EPS utama yang Anda ikuti. Jika tidak yakin, pilih “Tidak yakin”.</small>
+
+        <label class="check">
+          <input id="activeProcess" type="checkbox" required>
+          <span>Saya benar-benar sedang menjalani / melanjutkan proses resmi G-to-G Korea / EPS E-9.</span>
+        </label>
+
+        <label class="check">
+          <input id="feedbackAgreement" type="checkbox" required>
+          <span>Saya bersedia menggunakan layanan dan memberi feedback sesuai pengalaman nyata.</span>
+        </label>
+
+        <div id="applicantEmailCodeFields" hidden>
+          <label>Kode verifikasi email (8 digit)
+            <input id="applicantEmailCode" type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="8" pattern="[0-9]{8}" placeholder="12345678">
+          </label>
+          <small>Kode hanya berlaku 10 menit dan akan dikirim ke email yang Anda isi. Meminta kode bukan berarti pendaftaran sudah diterima. Jangan bagikan kode kepada perantara.</small>
+          <button id="applicantEmailResendBtn" class="secondary" type="button" hidden disabled>Kirim ulang kode</button>
+        </div>
+        <div id="directIntakeChallenge" hidden>
+          <p>Verifikasi keamanan sebelum mengirim langsung. Tidak perlu nomor identitas atau foto dokumen.</p>
+          <div id="intakeTurnstileMount" aria-label="Verifikasi keamanan"></div>
+          <small>Jika verifikasi gagal, gunakan Buka Gmail atau Salin teks pendaftaran.</small>
+        </div>
+        <div class="actions">
+          <button id="betaApplicationSubmitBtn" class="primary" type="submit">Kirim lewat aplikasi email</button>
+          <button id="gmailApplicationBtn" class="secondary" type="button">Buka Gmail</button>
+          <button id="copyApplicationBtn" class="secondary" type="button">Salin teks pendaftaran</button>
+        </div>
+        <small id="applicationSendHelp" class="send-help">Jika tombol email tidak membuka aplikasi, gunakan “Buka Gmail”. Jika Gmail juga tidak tersedia, salin teks lalu kirim manual ke alamat yang ditampilkan setelah menyalin.</small>
+        <div id="applicationResult" class="result" hidden></div>
+      </form>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Siapa yang dicari?</h2>
+        <ul id="eligibilityList"></ul>
+      </article>
+      <article class="card">
+        <h2>Syarat feedback</h2>
+        <ul id="feedbackList"></ul>
+      </article>
+    </section>
+
+    <section class="card no-guarantee">
+      <h2>Apa yang beta ini tidak janjikan</h2>
+      <div id="noGuaranteeList" class="chips"></div>
+      <p>Ini bukan penjualan lowongan dan bukan layanan penempatan berbayar.</p>
+    </section>
+
+    <section id="releaseGateNote" class="card">
+      <h2>Apa yang benar-benar menahan aktivasi beta?</h2>
+      <ul>
+        <li data-release-gate="manufacturing-evidence">Daftar berkas lamaran online final Manufaktur Umum E-9 tahun 2026 pasca-Skill Test harus dibuktikan lewat pengumuman dan lampiran resmi yang tepat.</li>
+        <li data-release-gate="human-review">Penanggung jawab manusia harus meninjau sumber resmi, konteks dan tanggal berlaku; pemeriksaan otomatis tidak menggantikan persetujuan manusia.</li>
+        <li data-release-gate="release-day-review">Sumber resmi Manufaktur harus diperiksa ulang pada hari rilis.</li>
+        <li data-release-gate="same-version-checks">Static check, UI smoke, pemeriksaan HTTPS dan verifikasi aset Pages harus lulus pada versi commit yang benar-benar akan dirilis.</li>
+        <li data-release-gate="candidate-verification">Versi kandidat yang sama harus benar-benar diterapkan ke situs publik dan diverifikasi; situs lama yang berfungsi bukan bukti penerapan kandidat.</li>
+        <li data-release-gate="manual-open">Operator harus mencatat keputusan OPEN secara terpisah dan manual.</li>
+      </ul>
+      <p><strong>Masih menjadi syarat wajib sebelum akses beta dibuka:</strong> checklist dokumen final Manufaktur Umum 2026 sesuai pengumuman dan lampiran resmi pasca-Skill Test, beserta penilaian ruang lingkup, berkas wajib/opsional, serta peninjauan manusia yang dapat dipertanggungjawabkan. Sampai bukti itu tersedia dan disetujui, tahap lamaran final tetap HOLD; aplikasi tidak membuat daftar dokumen sendiri. Minat tester boleh dikirim, tetapi pengiriman minat bukan aktivasi akses beta, persetujuan lamaran kerja, atau pengesahan dari pemerintah.</p>
+    </section>
+
+    <section id="communitySharePanel" class="card share-panel" hidden>
+      <span class="status-pill open">SIAP DIBAGIKAN</span>
+      <h2>Bagikan undangan tanpa kehilangan kode kanal</h2>
+      <p>Jika Anda admin LPK/komunitas atau menerima tautan dari partner KEP, gunakan tombol ini untuk menyalin undangan singkat. Kode kanal <strong id="communityShareSource">website</strong> tetap ikut agar kami bisa mengukur kanal mana yang benar-benar menghasilkan pendaftar tanpa menyimpan identitas anggota komunitas.</p>
+      <div class="share-actions">
+        <button id="shareCommunityApplicantInviteBtn" class="primary" type="button">Bagikan pelamar aktif</button>
+        <button id="copyCommunityApplicantInviteBtn" class="secondary" type="button">Salin undangan pelamar aktif</button>
+        <button id="shareCommunityWorkerInviteBtn" class="primary" type="button">Bagikan pekerja E-9</button>
+        <button id="copyCommunityWorkerInviteBtn" class="secondary" type="button">Salin undangan pekerja E-9</button>
+      </div>
+      <small class="send-help">Tombol “Bagikan” memakai menu share bawaan perangkat (mis. WhatsApp/Telegram jika tersedia). Jika browser tidak mendukungnya, KEP otomatis menyalin teks. Undangan tidak menyatakan afiliasi pemerintah dan tidak menjanjikan pekerjaan, employer selection, SLC, visa, atau keberangkatan.</small>
+      <div id="communityShareResult" class="result" hidden></div>
+    </section>
+
+    <section class="card privacy">
+      <h2>Privasi saat mendaftar</h2>
+      <p>Jika Anda mendaftar lewat email, alamat email pengirim akan terlihat oleh tim. Email hanya digunakan untuk review pendaftaran, keputusan beta, pemberian KEP ID jika disetujui, dan komunikasi beta yang diperlukan; tidak dimasukkan ke repositori publik.</p>
+      <p>Untuk mendaftar sebagai calon tester, kami tidak meminta nama, nomor paspor, nomor KTP, nomor ARC, nomor telepon, alamat rumah, atau foto dokumen identitas.</p>
+      <p>Jika pendaftaran dikirim lewat email, alamat email pengirim terlihat oleh tim. Jika mode kirim langsung diaktifkan, pengguna memasukkan alamat email sendiri dan hanya data minimum aplikasi yang dikirim ke penyimpanan intake privat. Dalam kedua mode, alamat email digunakan hanya untuk peninjauan, keputusan beta/KEP ID, dan komunikasi beta yang diperlukan; tidak dimasukkan ke repositori publik.</p>
+      <p>Jangan kirim gambar paspor/KTP/ARC untuk mendapatkan akses beta. <a href="privacy.html">Baca pemberitahuan privasi</a>.</p>
+    </section>
+
+    <section id="worker-panel" class="card validator">
+      <h2>Sudah bekerja di Korea dengan E-9?</h2>
+      <p>20 pekerja Indonesia di Korea akan direkrut terpisah sebagai panel validasi pengalaman nyata. Panel ini terpisah dari target awal sekitar 30 pelamar aktif.</p>
+      <div id="workerPanelClosed" class="result warn">
+        Akses panel validator belum diaktifkan. Pendaftaran minat sudah dibuka lebih dulu; mengirim minat tidak mengaktifkan akses panel.
+      </div>
+      <form id="workerValidatorForm" hidden>
+        <p><strong>Pendaftaran minat panel pekerja E-9 OPEN.</strong> Kirim minat sekarang; persetujuan dan akses panel akan diberikan terpisah setelah review.</p>
+        <label class="check">
+          <input id="workerInKorea" type="checkbox" required>
+          <span>Saya sekarang bekerja di Korea dengan status E-9.</span>
+        </label>
+        <label class="check">
+          <input id="workerUsedG2G" type="checkbox" required>
+          <span>Saya pernah melalui proses Indonesia G-to-G Korea / EPS.</span>
+        </label>
+        <label class="check">
+          <input id="workerFeedbackAgreement" type="checkbox" required>
+          <span>Saya bersedia membandingkan panduan aplikasi dengan pengalaman nyata dan melaporkan perbedaannya.</span>
+        </label>
+        <div class="actions">
+          <button class="primary" type="submit">Kirim lewat aplikasi email</button>
+          <button id="gmailWorkerValidatorBtn" class="secondary" type="button">Buka Gmail</button>
+          <button id="copyWorkerValidatorBtn" class="secondary" type="button">Salin teks validator</button>
+        </div>
+        <div id="workerValidatorResult" class="result" hidden></div>
+      </form>
+    </section>
+  </main>
+
+  <script src="beta.js"></script>
+</body>
+</html>

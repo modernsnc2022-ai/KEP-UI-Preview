@@ -1,0 +1,495 @@
+{
+  "version": "1.3.0",
+  "routeId": "np-e9-manufacturing-2026",
+  "verifiedAt": "2026-10-05",
+  "principle": "Answer exactly from the 2026 Nepal EPS-TOPIK first-phase official notice. If the notice does not determine an answer, do not infer it from Indonesia or an older Nepal cohort.",
+  "primaryNotice": {
+    "title": "2026 First-Phase Korean Language Test (EPS-TOPIK) application notice",
+    "publishedAt": "2026-07-21",
+    "pageUrl": "https://epsnepal.gov.np/postdetails/136",
+    "pdfUrl": "https://epsnepal.gov.np/uploads/files_video/files_1784602958.pdf"
+  },
+  "answers": [
+    {
+      "id": "np_2026_application_window",
+      "stages": [
+        "registration"
+      ],
+      "question": "When was the 2026 first-phase EPS-TOPIK application window?",
+      "answer": "July 27 through August 2, 2026.",
+      "writeExactly": "The verified 2026 first-phase application window was 2026-07-27 through 2026-08-02. That window is closed; do not pay a broker to submit a late application.",
+      "verificationStatus": "verified_official_pdf",
+      "sourceUrl": "https://epsnepal.gov.np/uploads/files_video/files_1784602958.pdf",
+      "verifiedAt": "2026-10-05",
+      "operationalQualification": "Official notices on 2026-07-28 show a temporary suspension and later resumption of the online application system. No deadline extension is currently verified."
+    },
+    {
+      "id": "np_2026_application_portal",
+      "stages": [
+        "registration"
+      ],
+      "question": "Where is the official Nepal EPS application submitted?",
+      "answer": "https://eoers.epsnepal.gov.np/",
+      "writeExactly": "Submit only through the official EPS Nepal online application portal named in the notice: https://eoers.epsnepal.gov.np/.",
+      "verificationStatus": "verified_official_pdf",
+      "sourceUrl": "https://epsnepal.gov.np/uploads/files_video/files_1784602958.pdf",
+      "verifiedAt": "2026-10-05",
+      "operationalQualification": "Official notices on 2026-07-28 show a temporary suspension and later resumption of the online application system. No deadline extension is currently verified."
+    },
+    {
+      "id": "np_2026_exam_fee",
+      "stages": [
+        "exam_fee",
+        "registration"
+      ],
+      "question": "What was the official EPS-TOPIK application fee for this notice?",
+      "answer": "US$28, paid online in Nepalese rupees using the Nepal Rastra Bank exchange rate applicable on the application date.",
+      "writeExactly": "Official exam fee: US$28 equivalent in NPR, calculated using the Nepal Rastra Bank exchange rate for the application date and paid online through the application flow.",
+      "verificationStatus": "verified_official_pdf",
+      "sourceUrl": "https://epsnepal.gov.np/uploads/files_video/files_1784602958.pdf",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "np_2026_age_rule",
+      "stages": [
+        "eligibility"
+      ],
+      "question": "What age range applies?",
+      "answer": "18 to 39 years old; the notice states eligible birth dates from July 28, 1986 through July 27, 2008.",
+      "writeExactly": "Applicant must be at least 18 and not over 39 under this notice: birth date 1986-07-28 through 2008-07-27.",
+      "verificationStatus": "verified_official_pdf",
+      "sourceUrl": "https://epsnepal.gov.np/uploads/files_video/files_1784602958.pdf",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "np_2026_citizenship",
+      "stages": [
+        "eligibility"
+      ],
+      "question": "Must the applicant be a Nepali citizen?",
+      "answer": "Yes.",
+      "writeExactly": "Applicant must be a Nepali citizen.",
+      "verificationStatus": "verified_official_pdf",
+      "sourceUrl": "https://epsnepal.gov.np/uploads/files_video/files_1784602958.pdf",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "np_2026_criminal_rule",
+      "stages": [
+        "eligibility"
+      ],
+      "question": "What criminal-record condition is stated?",
+      "answer": "The applicant must not have been sentenced by a court for a criminal offense.",
+      "writeExactly": "Do not treat the applicant as eligible if they have a court sentence for a criminal offense under the notice's eligibility rule.",
+      "verificationStatus": "verified_official_pdf",
+      "sourceUrl": "https://epsnepal.gov.np/uploads/files_video/files_1784602958.pdf",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "np_2026_korea_deportation_rule",
+      "stages": [
+        "eligibility"
+      ],
+      "question": "What Korea illegal-stay/deportation condition is stated?",
+      "answer": "The applicant must not have been sent back from Korea after illegally residing there.",
+      "writeExactly": "Applicant must not have a history of being returned/deported from Korea for illegal residence.",
+      "verificationStatus": "verified_official_pdf",
+      "sourceUrl": "https://epsnepal.gov.np/uploads/files_video/files_1784602958.pdf",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "np_2026_nepal_travel_ban_rule",
+      "stages": [
+        "eligibility"
+      ],
+      "question": "Can someone barred by the Nepal government from foreign travel apply?",
+      "answer": "No.",
+      "writeExactly": "Applicant must not be subject to a Nepal government restriction preventing foreign travel.",
+      "verificationStatus": "verified_official_pdf",
+      "sourceUrl": "https://epsnepal.gov.np/uploads/files_video/files_1784602958.pdf",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "np_2026_e9_e10_stay_limit",
+      "stages": [
+        "eligibility"
+      ],
+      "question": "What prior Korea E-9/E-10 stay limit applies?",
+      "answer": "The applicant must not have stayed in Korea for 5 years or more in total under E-9 or E-10 status.",
+      "writeExactly": "Total prior stay in Korea under E-9 or E-10 must be less than 5 years.",
+      "verificationStatus": "verified_official_pdf",
+      "sourceUrl": "https://epsnepal.gov.np/uploads/files_video/files_1784602958.pdf",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "np_2026_color_vision_rule",
+      "stages": [
+        "eligibility"
+      ],
+      "question": "What color-vision condition is stated?",
+      "answer": "Applicants with color blindness or color weakness are not eligible under this notice.",
+      "writeExactly": "Color blindness or color weakness fails the stated eligibility condition for this notice.",
+      "verificationStatus": "verified_official_pdf",
+      "sourceUrl": "https://epsnepal.gov.np/uploads/files_video/files_1784602958.pdf",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "np_2026_sector_choice_lock",
+      "stages": [
+        "registration",
+        "final_selection"
+      ],
+      "question": "Can an applicant apply to more than one sector or change sector after first-stage selection?",
+      "answer": "No. One applicant may apply to only one sector, and the selected sector cannot be changed after passing the first-stage language test.",
+      "writeExactly": "Choose one sector only. After first-stage language-test selection, the sector cannot be changed.",
+      "verificationStatus": "verified_official_pdf",
+      "sourceUrl": "https://epsnepal.gov.np/uploads/files_video/files_1784602958.pdf",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "np_2026_manufacturing_quota",
+      "stages": [
+        "registration",
+        "final_selection"
+      ],
+      "question": "What is the estimated Manufacturing selection count?",
+      "answer": "5,000.",
+      "writeExactly": "Estimated Manufacturing selection count under the 2026 first-phase notice: 5,000.",
+      "verificationStatus": "verified_official_pdf",
+      "sourceUrl": "https://epsnepal.gov.np/uploads/files_video/files_1784602958.pdf",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "np_2026_total_quota",
+      "stages": [
+        "registration",
+        "final_selection"
+      ],
+      "question": "What is the total estimated selection count across listed sectors?",
+      "answer": "7,200.",
+      "writeExactly": "Estimated total across Manufacturing, Agriculture & Livestock, Service I and Forestry: 7,200.",
+      "verificationStatus": "verified_official_pdf",
+      "sourceUrl": "https://epsnepal.gov.np/uploads/files_video/files_1784602958.pdf",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "np_2026_passport_scan",
+      "stages": [
+        "registration",
+        "document_verify"
+      ],
+      "question": "What passport image is required for online application?",
+      "answer": "A scanned JPG image of the passport page containing the applicant photo; width 600 pixels and file size under 89 KB.",
+      "writeExactly": "Upload the passport photo-page scan as JPG, width 600 px, under 89 KB.",
+      "verificationStatus": "verified_primary_notice_supplementary_review_pending",
+      "sourceUrl": "https://epsnepal.gov.np/uploads/files_video/files_1784602958.pdf",
+      "verifiedAt": "2026-10-05",
+      "operationalQualification": "A later official notice dated 2026-07-30 concerns online application submission and passport. Its exact content must be reviewed before treating the primary notice as exhaustive on passport/submission exceptions."
+    },
+    {
+      "id": "np_2026_contact_required",
+      "stages": [
+        "registration",
+        "document_verify"
+      ],
+      "question": "Are email and mobile number required?",
+      "answer": "Yes. The notice requires the applicant's own email address and mobile number to be entered.",
+      "writeExactly": "Enter the applicant's own active email address and mobile number.",
+      "verificationStatus": "verified_official_pdf",
+      "sourceUrl": "https://epsnepal.gov.np/uploads/files_video/files_1784602958.pdf",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "np_2026_photo_rule",
+      "stages": [
+        "registration",
+        "document_verify"
+      ],
+      "question": "What photo specification is required?",
+      "answer": "Recent color photo taken within 6 months, 3.5 × 4.5 cm, white background, no white clothing, both ears clearly visible; JPG width 100–300 pixels and 8–14 KB.",
+      "writeExactly": "Use a recent color photo (within 6 months), 3.5×4.5 cm, white background, no white clothing, both ears visible; JPG 100–300 px wide, 8–14 KB.",
+      "verificationStatus": "verified_official_pdf",
+      "sourceUrl": "https://epsnepal.gov.np/uploads/files_video/files_1784602958.pdf",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "np_2026_identity_match",
+      "stages": [
+        "registration",
+        "document_verify"
+      ],
+      "question": "Can name, date of birth, sex or photo differ from the passport and be corrected later?",
+      "answer": "No. The notice warns that differing personal details may exclude the applicant from the test and those details cannot be corrected after registration.",
+      "writeExactly": "Before submission, make name, date of birth, sex and photo match the passport. Do not assume these fields can be corrected after registration.",
+      "verificationStatus": "verified_primary_notice_supplementary_review_pending",
+      "sourceUrl": "https://epsnepal.gov.np/uploads/files_video/files_1784602958.pdf",
+      "verifiedAt": "2026-10-05",
+      "operationalQualification": "A later official notice dated 2026-07-30 concerns online application submission and passport. Its exact content must be reviewed before treating the primary notice as exhaustive on passport/submission exceptions."
+    },
+    {
+      "id": "np_2026_test_location",
+      "stages": [
+        "eps_topik",
+        "exam_card"
+      ],
+      "question": "Where is the UBT conducted?",
+      "answer": "At the UBT building in Bhaisepati, Lalitpur.",
+      "writeExactly": "Verified test venue basis: UBT building, Bhaisepati, Lalitpur. Follow the individual schedule/admission notice for the exact session.",
+      "verificationStatus": "verified_official_pdf",
+      "sourceUrl": "https://epsnepal.gov.np/uploads/files_video/files_1784602958.pdf",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "np_2026_test_format",
+      "stages": [
+        "eps_topik"
+      ],
+      "question": "What is the EPS-TOPIK first-stage test format?",
+      "answer": "Reading: 20 questions, 50 points, 25 minutes. Listening: 20 questions, 50 points, 25 minutes. Total: 40 questions, 100 points, 50 minutes.",
+      "writeExactly": "Reading 20 questions / 50 points / 25 min + Listening 20 questions / 50 points / 25 min = 40 questions / 100 points / 50 min.",
+      "verificationStatus": "verified_official_pdf",
+      "sourceUrl": "https://epsnepal.gov.np/uploads/files_video/files_1784602958.pdf",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "np_2026_exam_day_documents",
+      "stages": [
+        "exam_card",
+        "eps_topik"
+      ],
+      "question": "What must the applicant bring on test day?",
+      "answer": "The same original passport whose copy was submitted with the application, plus the test application slip.",
+      "writeExactly": "Bring the same original passport used for the application and the test application slip. The notice says applicants without those originals/documents are not admitted.",
+      "verificationStatus": "verified_official_pdf",
+      "sourceUrl": "https://epsnepal.gov.np/uploads/files_video/files_1784602958.pdf",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "np_2026_result_validity",
+      "stages": [
+        "final_selection"
+      ],
+      "question": "How long is the final successful-candidate result valid?",
+      "answer": "2 years from the date the final successful-candidate result is published.",
+      "writeExactly": "Final successful-candidate result validity: 2 years from publication of the final result.",
+      "verificationStatus": "verified_official_pdf",
+      "sourceUrl": "https://epsnepal.gov.np/uploads/files_video/files_1784602958.pdf",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "np_2026_private_intermediary",
+      "stages": [
+        "registration",
+        "exam_fee",
+        "document_verify"
+      ],
+      "question": "Should an applicant use a private intermediary for the EPS application?",
+      "answer": "No private intermediary is required. The notice directs applicants to the official EPS Nepal online portal.",
+      "writeExactly": "Use the official EPS Nepal portal directly. KEP does not treat a private broker, training institute or intermediary as an official submission channel.",
+      "verificationStatus": "derived_from_official_submission_channel",
+      "sourceUrl": "https://epsnepal.gov.np/postdetails/136",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "np_2026_biometric_day_before",
+      "stages": [
+        "biometric"
+      ],
+      "question": "When does biometric registration occur?",
+      "answer": "The official Nepal EPS process guide says biometric registration is done at EPS Korea Section, Gwarko on the day before the assigned exam date, with the original passport and admission card.",
+      "writeExactly": "Attend EPS Korea Section, Gwarko on the day before your assigned exam with the original passport and admission card.",
+      "verificationStatus": "verified_official_process_pdf",
+      "sourceUrl": "https://epsnepal.gov.np/uploads/files_video/files_1774432089.pdf",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "np_2026_exam_arrival_time",
+      "stages": [
+        "exam_card",
+        "eps_topik"
+      ],
+      "question": "How early should the applicant arrive at the exam building?",
+      "answer": "1.5 hours before the exam.",
+      "writeExactly": "Arrive at the UBT/CBT exam building 1.5 hours before the exam with the original passport and admission card.",
+      "verificationStatus": "verified_official_process_pdf",
+      "sourceUrl": "https://epsnepal.gov.np/uploads/files_video/files_1774432089.pdf",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "np_2026_medical_police_baseline",
+      "stages": [
+        "mcu1"
+      ],
+      "question": "What does the official Nepal EPS process say about medical and police checks?",
+      "answer": "Complete medical examination at a designated hospital on the assigned date/time and prepare the police report online. The process guide lists Civil, Shukraraj, Korea Friendship and Patan hospitals and states a baseline medical cost of US$55.64.",
+      "writeExactly": "Use only the currently designated hospital list. The March 2026 process guide lists Civil, Shukraraj, Korea Friendship and Patan and states US$55.64, but recheck the latest provider/fee notice before payment.",
+      "verificationStatus": "verified_official_process_pdf_currentness_check_required",
+      "sourceUrl": "https://epsnepal.gov.np/uploads/files_video/files_1774432089.pdf",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "np_2026_job_application_baseline",
+      "stages": [
+        "job_application"
+      ],
+      "question": "What baseline documents are used for the employment-application stage?",
+      "answer": "Passport, ID photo, medical examination report, police report and employment application form; the process guide states a US$5 online fee.",
+      "writeExactly": "The official process baseline uses passport + ID photo + medical report + police report + employment application form and states US$5 online. Do not use this as the 2026 first-phase cohort submission window until its own notice is published.",
+      "verificationStatus": "verified_official_process_pdf_current_cohort_dates_pending",
+      "sourceUrl": "https://epsnepal.gov.np/uploads/files_video/files_1774432089.pdf",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "np_2026_roster_status",
+      "stages": [
+        "roster"
+      ],
+      "question": "How can an applicant follow roster/application status?",
+      "answer": "The process guide says the EPS application is transmitted into Korea's system and the individual can check through the official EPS site using the EPS-TOPIK ID.",
+      "writeExactly": "Use the official EPS site and your EPS-TOPIK ID to follow status. Do not pay anyone to 'move' your file.",
+      "verificationStatus": "verified_official_process_pdf",
+      "sourceUrl": "https://epsnepal.gov.np/uploads/files_video/files_1774432089.pdf",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "np_2026_job_matching_automation",
+      "stages": [
+        "employer_selection"
+      ],
+      "question": "Can an official or broker manually guarantee employer matching?",
+      "answer": "No. The official Nepal EPS guide describes job matching as an online automated Korean system and states that sending-agency/EPS/other officials cannot manually intervene to recommend a person to a specific employer.",
+      "writeExactly": "Employer matching is automated through the Korean system. No broker, EPS staff member or other official can legitimately guarantee a specific employer selection.",
+      "verificationStatus": "verified_official_process_pdf",
+      "sourceUrl": "https://epsnepal.gov.np/uploads/files_video/files_1774432089.pdf",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "np_2026_slc_signature",
+      "stages": [
+        "slc"
+      ],
+      "question": "What happens when a Labor Contract/SLC is forwarded?",
+      "answer": "Follow the current EPS Nepal contract notice and appear in person at EPS Korea Section, Gwarko to sign. A 2026 labor-contract notice instructs listed workers to contact the office and sign within 7 days from the labor-contract date.",
+      "writeExactly": "When your name appears in the official Labor Contract notice, follow that notice and sign in person at EPS Korea Section, Gwarko. Do not rely on a broker to accept or sign for you.",
+      "verificationStatus": "verified_official_process_pdf_current_notice_overlay",
+      "sourceUrl": "https://epsnepal.gov.np/uploads/files_video/files_1774432089.pdf",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "np_2026_pdot_baseline",
+      "stages": [
+        "predeparture_training"
+      ],
+      "question": "What is the baseline pre-departure training process?",
+      "answer": "The official EPS process guide describes a 6-day training at the National Vocational Training Institute, Bhaisepati and states a baseline fee of US$63 with online application.",
+      "writeExactly": "Baseline: 6-day training at the National Vocational Training Institute, Bhaisepati; the March 2026 guide states US$63. Recheck the current contract/departure notice because category-specific requirements and fees can change.",
+      "verificationStatus": "verified_official_process_pdf_currentness_check_required",
+      "sourceUrl": "https://epsnepal.gov.np/uploads/files_video/files_1774432089.pdf",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "np_2026_ccvi_package",
+      "stages": [
+        "visa_docs"
+      ],
+      "question": "What baseline documents are listed after CCVI issuance?",
+      "answer": "Passport, ID photo, medical report, police report, citizenship photocopy, admission-card photocopy, PDOT certificate photocopy and the CCVI form/payment voucher are listed for in-person submission at EPS Korea Section, Gwarko.",
+      "writeExactly": "Prepare the official CCVI/visa document package and appear at EPS Korea Section, Gwarko as instructed. Do not use the historical NPR 10,700 amount as a current fee without checking the latest visa/service-fee notice.",
+      "verificationStatus": "verified_official_process_pdf_fee_volatile",
+      "sourceUrl": "https://epsnepal.gov.np/uploads/files_video/files_1774432089.pdf",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "np_2026_visa_status",
+      "stages": [
+        "visa_docs"
+      ],
+      "question": "Where can visa status be checked?",
+      "answer": "The official EPS Nepal process guide directs workers to the Korea Visa Portal at visa.go.kr.",
+      "writeExactly": "Check visa status through the official Korea Visa Portal. Do not rely on a private intermediary's screenshot or verbal claim.",
+      "verificationStatus": "verified_official_process_pdf",
+      "sourceUrl": "https://epsnepal.gov.np/uploads/files_video/files_1774432089.pdf",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "np_2026_labor_approval",
+      "stages": [
+        "departure"
+      ],
+      "question": "What official Nepal step is required before final departure?",
+      "answer": "The EPS process guide says to complete the labor-approval application through FEIMS and follow the final EPS Nepal flight notice and scheduled pre-departure instructions.",
+      "writeExactly": "Before departure, complete the official Nepal labor-approval process through FEIMS and follow the final EPS Nepal flight notice.",
+      "verificationStatus": "verified_official_process_pdf",
+      "sourceUrl": "https://epsnepal.gov.np/uploads/files_video/files_1774432089.pdf",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "np_2026_departure_airports",
+      "stages": [
+        "departure"
+      ],
+      "question": "Which Nepal airports can be used for EPS departure?",
+      "answer": "The process guide lists Tribhuvan International Airport, Kathmandu, or Gautam Buddha International Airport, Bhairahawa, according to the assigned flight.",
+      "writeExactly": "Travel only on the assigned official flight; the baseline guide lists Kathmandu TIA or Gautam Buddha International Airport, Bhairahawa.",
+      "verificationStatus": "verified_official_process_pdf",
+      "sourceUrl": "https://epsnepal.gov.np/uploads/files_video/files_1774432089.pdf",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "np_2026_reregistration_rule",
+      "stages": [
+        "employment_maintenance"
+      ],
+      "question": "Who is the re-registration step for?",
+      "answer": "The official process guide describes re-registration for applicants who remain on the roster and were not selected during the first year.",
+      "writeExactly": "Re-registration is not a general reset. Use it only when you meet the current official re-registration criteria and notice.",
+      "verificationStatus": "verified_official_process_pdf",
+      "sourceUrl": "https://epsnepal.gov.np/uploads/files_video/files_1774432089.pdf",
+      "verifiedAt": "2026-10-05"
+    },
+    {
+      "id": "np_2026_hrd_manufacturing_schedule_row",
+      "stages": [
+        "registration",
+        "exam_card",
+        "eps_topik"
+      ],
+      "question": "Does HRD Korea currently list a 2026 Nepal Manufacturing Point System row?",
+      "answer": "Yes. HRD Korea lists 'The 5th recruitment of the Point system in Nepal_Manufacturing(5부)' as General CBT / Point System.",
+      "writeExactly": "Current HRD Korea Manufacturing schedule row verified. Registration is shown as 2026-07-27 through 2026-08-05; test announcement and test period remain undecided.",
+      "verificationStatus": "verified_direct_official_hrd_current",
+      "sourceUrl": "https://epstopik.hrdkorea.or.kr/epstopik/abot/exam/sechduleDetail.do?examNation=006&examNot=90&examYear=2026&lang=ko&lcnsId=001",
+      "verifiedAt": "2026-10-06"
+    },
+    {
+      "id": "np_2026_hrd_test_date_state",
+      "stages": [
+        "exam_card",
+        "eps_topik"
+      ],
+      "question": "Are the current Nepal Manufacturing EPS-TOPIK test date and announcement date decided in HRD Korea?",
+      "answer": "No. Both test-announcement date and test period are currently undecided on the verified HRD Korea row.",
+      "writeExactly": "Do not invent a Nepal 2026 first-phase exam date/session. HRD Korea currently marks the announcement date and test period undecided.",
+      "verificationStatus": "verified_direct_official_hrd_undecided",
+      "sourceUrl": "https://epstopik.hrdkorea.or.kr/epstopik/abot/exam/sechduleDetail.do?examNation=006&examNot=90&examYear=2026&lang=ko&lcnsId=001",
+      "verifiedAt": "2026-10-06"
+    },
+    {
+      "id": "np_2026_registration_cross_source_end_date",
+      "stages": [
+        "registration"
+      ],
+      "question": "Why do Nepal local and HRD Korea sources show different registration end dates?",
+      "answer": "The Nepal local primary notice says 2026-08-02, while HRD Korea's current Manufacturing schedule row says 2026-08-05. KEP has not verified from reviewed Nepal supplementary content that the local deadline was extended.",
+      "writeExactly": "Applicant-facing exact local-primary window remains 2026-07-27 through 2026-08-02. Preserve HRD Korea's 2026-08-05 row as cross-source evidence; do not call it a verified Nepal deadline extension.",
+      "verificationStatus": "verified_cross_source_discrepancy_unresolved",
+      "sourceUrl": "https://epstopik.hrdkorea.or.kr/epstopik/abot/exam/sechduleDetail.do?examNation=006&examNot=90&examYear=2026&lang=ko&lcnsId=001",
+      "verifiedAt": "2026-10-06"
+    }
+  ],
+  "operationalNoticesFile": "data/np_registration_notices_2026.json",
+  "supplementaryNoticePolicy": "The primary notice is the exact-rule baseline. Later official notices are tracked separately and supersede a rule only after their content is reviewed; titles alone never create an extension or exception.",
+  "processBaselineFile": "data/np_eps_process_baseline_2026.json",
+  "processBaselinePolicy": "The March 2026 official EPS process guide can define stable process structure, but current cohort dates, designated providers and volatile fees must be rechecked against later official notices.",
+  "hrdScheduleEvidenceFile": "data/np_hrd_schedule_2026.json"
+}
